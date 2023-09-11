@@ -78,6 +78,10 @@ public class CT_Editor : Editor
                             case CutsceneTracker.VN_Actions.Shake:
                                 ShakeObject();
                                 break;
+
+                            case CutsceneTracker.VN_Actions.ChangePose:
+                                ChangePose();
+                                break;
                         }
                         // Then call the respective functions down here, this way the exact amount of each string value will be called
                         //NumOfInputLines(ct_Script, numOfLinesPerScene, i);
@@ -192,6 +196,11 @@ public class CT_Editor : Editor
     }
 
     void ShakeObject()
+    {
+
+    }
+
+    void ChangePose()
     {
 
     }

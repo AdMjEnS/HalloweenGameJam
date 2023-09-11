@@ -485,5 +485,9 @@ PrefabInstance:
       propertyPath: transitionPicture
       value: 
       objectReference: {fileID: 1045163964}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[5]
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fccea64762dff6e4c975df1b206489ba, type: 3}

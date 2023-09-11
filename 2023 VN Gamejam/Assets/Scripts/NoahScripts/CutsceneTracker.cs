@@ -8,13 +8,14 @@ public class CutsceneTracker : MonoBehaviour
 {
     public enum VN_Actions
     {
-        Line,
-        Appear,
-        Remove,
-        Shake,
-        Rotate,
-        Move,
-        Backgound
+        Line,               // Writes the lines that will be said along with the name of who's saying it
+        Appear,             // Makes a gameObject sprite appear either in frame instantly or from off screen and move on screen
+        Remove,             // Makes a gameObject sprite dissapear either in frame instantly or move off screen then disapear
+        Shake,              // Shakes a gameObject ***For example play the yarn example VN to see what I mean
+        Rotate,             // Rotates a gameObject sprite on an axis so there facing the opposite direction
+        Move,               // Moves a gameObject from where they are on the screen to another spot on the screen
+        Backgound,          // Changes the background image
+        ChangePose          // Swaps either the gameObject or sprite of something to something else, likely used for when we want to have a character change there body pose mide conversation
     }
 
     public SceneActions[] performableActions;
