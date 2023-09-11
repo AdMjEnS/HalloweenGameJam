@@ -1,0 +1,648 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &577740833872231904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 577740833872231908}
+  - component: {fileID: 577740833872231910}
+  - component: {fileID: 577740833872231911}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &577740833872231908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577740833872231904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 333.23865, y: 243, z: -3.1236677}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &577740833872231910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577740833872231904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5506621dc125b4babb48e071697de6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  performableActions:
+  - Actions: 06000000010000000000000005000000040000000000000002000000
+  - Actions: 060000000100000000000000050000000300000002000000
+  - Actions: 000000000100000000000000050000000000000002000000
+  - Actions: 000000000100000000000000050000000000000002000000
+  - Actions: 000000000100000000000000050000000000000002000000
+  - Actions: 000000000100000000000000050000000000000002000000
+  numberOfTrees: 0
+  actionToPreform:
+  - erterteert
+  - sdfs
+  - wew
+  Lines:
+  - jnbvcde
+  - sdf
+  - wert
+  - afsgh
+  - qasxdfvgbh
+  - asasasda
+  - asfaf
+  - 
+  linesOreintation: 
+  GameLines:
+  - sceneText:
+    - Hello
+    - World
+  - sceneText:
+    - Nice To Meet You
+  - sceneText:
+    - I Love
+    - When Things
+    - Work Out
+  - sceneText:
+    - I Love
+    - When Things
+    - Work Out
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  GameNames:
+  - sceneText:
+    - Mama
+    - Mea
+  - sceneText:
+    - Raptar
+  - sceneText:
+    - Jack
+    - Jack
+    - Jill
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText:
+    - 
+    - 
+    - 
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  transitionOverlay: {fileID: 0}
+  transitionPicture: {fileID: 0}
+  displayText: {fileID: 0}
+  continueText: {fileID: 0}
+  nameText: {fileID: 0}
+  saveRandomIntroText: []
+  saveRandomPreText:
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  - sceneText: []
+  saveRandomImages: []
+--- !u!114 &577740833872231911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577740833872231904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afcfa3dc7db099b4a919e7a8368c167b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fastMusic: []
+  slowMusic: []
+  savingRandomGameAudio: []
+  savingFamilyGameAudio: []
+  relaxingNatureGameAudio: []
+  relaxingBreathingGameAudio: []
+  savoringGameAudio: []
+  paridoxicalIntentionsGameAudio: []
+  TimeSeneitiveGameAudio: []
+  transitionAudio: {fileID: 0}
+  duringGameVoice: {fileID: 0}
+  gm: {fileID: 0}
+  savingRandomStartAudio: []
+  savingRandomPreAudio: []
+  savingRandomPostAudio: []
+  savingRandomEndAudio: []
+  savingFamilyStartAudio: []
+  savingFamilyPreAudio: []
+  savingFamilyPostAudio: []
+  savingFamilyEndAudio: []
+  relaxingNatureStartAudio: []
+  relaxingNaturePreAudio: []
+  relaxingNaturePostAudio: []
+  relaxingNatureEndAudio: []
+  relaxingBreathingStartAudio: []
+  relaxingBreatingPreAudio: []
+  relaxingBreathingPostAudio: []
+  relaxingBreathingEndAudio: []
+  savoringStartAudio: []
+  savoringPreAudio: []
+  savoringPostAudio: []
+  savoringEndAudio: []
+  paridoxStartAudio: []
+  paridoxPreAudio: []
+  paridoxPostAudio: []
+  paridoxEndAudio: []
+  noReasonStartAudio: []
+  noReasonPreAudio: []
+  noReasonPostAudio: []
+  noReasonEndAudio: []
