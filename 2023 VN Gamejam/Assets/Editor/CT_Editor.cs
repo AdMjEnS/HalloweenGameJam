@@ -100,7 +100,7 @@ public class CT_Editor : Editor
                                 numRemovedChars++;
                                 break;
 
-                            case CutsceneTracker.VN_Actions.Rotate:
+                            case CutsceneTracker.VN_Actions.Mirror:
                                 numRotatingCharacters++;
                                 break;
 

@@ -32,6 +32,7 @@ public class CutsceneTracker : MonoBehaviour
     public SceneText[] GameNames;
 
     public GameObject transitionOverlay;
+    public GameObject PNCOverlay;
     public Image transitionPicture;
     public Text displayText;
     public Text continueText;
@@ -41,10 +42,23 @@ public class CutsceneTracker : MonoBehaviour
     public SceneText[] saveRandomPreText;
     public Sprite[] saveRandomImages;
 
+    public SceneObjects[] currentPos;
+    public SceneObjects[] newPos;
+
+    public bool PNCActive = false;
+    public GameObject[] items;
+    public int count;
+
     [Serializable]
     public class SceneText
     {
         public List<string> sceneText;
+    }
+
+    [Serializable]
+    public class SceneObjects
+    {
+        public List<GameObject> sceneObject = new List<GameObject>();
     }
 
     [Serializable]
@@ -101,20 +115,36 @@ public class CutsceneTracker : MonoBehaviour
     IEnumerator LoadTextDialogue(string text, string name)
     {
         nameText.text = name;
-        for (int i = 0; i < text.Length; i++)
+        if (text != "*")
         {
-            displayText.text = text.Substring(0, i);
-            yield return new WaitForSecondsRealtime(0.03f);
+            for (int i = 0; i < text.Length; i++)
+            {
+                displayText.text = text.Substring(0, i);
+
+                yield return new WaitForSecondsRealtime(0.03f);
+            }
+            displayText.text = text;
         }
-        displayText.text = text;
+        else
+        {
+            PNCActive = true;
+        }
         /*while (sm.transitionAudio.isPlaying)
         {
             yield return 0;
         }*/
+
+        if(PNCActive == true)
+        {
+            StartCoroutine(RunPNC());
+        }
+
+      
         continueText.enabled = true;
         yield return StartCoroutine(WaitForDownKey(KeyCode.Return));
         continueText.enabled = false;
     }
+
 
     void Appear(GameObject obj)
     {
@@ -177,4 +207,29 @@ public class CutsceneTracker : MonoBehaviour
     {
         obj.sprite = img;
     }
+
+     IEnumerator RunPNC()
+    {
+        
+        transitionOverlay.SetActive(false);
+        PNCOverlay.SetActive(true);
+        items = GameObject.FindGameObjectsWithTag("Item");
+        count = items.Length;
+        Debug.Log(count);
+       
+        for (; count > 0;)
+        {
+            yield return new WaitForSeconds(0.5f);
+        }
+
+        transitionOverlay.SetActive(true);
+        PNCOverlay.SetActive(false);
+        PNCActive = false;
+
+        StopCoroutine(RunPNC());
+
+    }
+
+
+
 }

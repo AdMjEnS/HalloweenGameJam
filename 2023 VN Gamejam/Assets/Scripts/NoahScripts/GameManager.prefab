@@ -78,9 +78,9 @@ MonoBehaviour:
     - When Things
     - Work Out
   - sceneText:
-    - I Love
-    - When Things
-    - Work Out
+    - '*'
+    - 
+    - 
   - sceneText:
     - 
     - 
@@ -479,6 +479,11 @@ MonoBehaviour:
     - 
     - 
     - 
+    - 
+    - 
+    - 
+    - 
+    - 
   - sceneText:
     - 
     - 
@@ -582,6 +587,7 @@ MonoBehaviour:
   - sceneText: []
   - sceneText: []
   transitionOverlay: {fileID: 0}
+  PNCOverlay: {fileID: 0}
   transitionPicture: {fileID: 0}
   displayText: {fileID: 0}
   continueText: {fileID: 0}
@@ -594,6 +600,8 @@ MonoBehaviour:
   - sceneText: []
   - sceneText: []
   saveRandomImages: []
+  PNCActive: 0
+  items: []
 --- !u!114 &577740833872231911
 MonoBehaviour:
   m_ObjectHideFlags: 0
