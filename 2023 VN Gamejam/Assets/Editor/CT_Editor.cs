@@ -3,27 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System;
+using UnityEditorInternal;
 
 [CustomEditor(typeof(CutsceneTracker))]
 public class CT_Editor : Editor
 {
-    // The different actions we can have be preformed in the game
-    /*public enum VN_Actions
+    //Initializating the different scroll views
+    Vector2 sceneScrollPos = Vector2.zero;
+    Vector2 actionScrollPos = Vector2.zero;
+
+    int numOfLinesPerScene = 0;
+    int charactersAppearing = 0;
+    int numBackgrounds = 0;
+    int numMovedCharacter = 0;
+    int numRemovedChars = 0;
+    int numRotatingCharacters = 0;
+    int shakeObjects = 0;
+    int numOfPosChanges = 0;
+
+    private ReorderableList list;
+
+    public void OnEnable()
     {
-        Line,
-        Appear,
-        Remove,
-        Shake,
-        Rotate,
-        Move,
-        Backgound
-    }*/
+        list = new ReorderableList(serializedObject, serializedObject.FindProperty("performableActions"));
+        list.onSelectCallback = (ReorderableList l) =>
+        {
+            var prefab = l.serializedProperty.GetArrayElementAtIndex(l.index);
+        };
+    }
 
-    // The enum fields that will determine what variables to display in the Inspector
-    //public VN_Actions[] preformableActions;
-
-    Vector2 scrollPos = Vector2.zero;
-    
     /// <summary>
     /// The function that makes the custom editor work
     /// </summary>
@@ -33,16 +41,37 @@ public class CT_Editor : Editor
         CutsceneTracker ct_Script = (CutsceneTracker)target;
 
         //Displays the Scene actions that will be taking place
+        sceneScrollPos = EditorGUILayout.BeginScrollView(sceneScrollPos, GUILayout.Height(300));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("performableActions"), true);
+        EditorGUILayout.EndScrollView();
+
+        if (GUILayout.Button("Decrease Scenes list by 1"))
+        {
+            Array.Resize(ref ct_Script.performableActions, ct_Script.performableActions.Length - 1);
+        }
+
+        EditorGUILayout.Space();
+
+        if (GUILayout.Button("Change Scene Name"))
+        {
+            EditorGUILayout.SelectableLabel("Change Scene Name");
+        }
+
+        EditorGUILayout.Space();
+
+        EditorGUILayout.TextField("Input Scene Name Here");
+
+        EditorGUILayout.Space();
+
+        EditorGUILayout.LabelField("Don't touch the +- buttons for the lists bellow");
+
+        EditorGUILayout.Space();
 
         var CT_Actions = ct_Script.performableActions;
         var serialCT_Actions = serializedObject.FindProperty("performableActions");
 
-        int numOfLinesPerScene = 0;
-
         if (CT_Actions.Length > 0)
         {
-            ct_Script.linesOreintation.Clear();
             for (int i = 0; i < CT_Actions.Length; i++)
             {
                 if (serialCT_Actions.GetArrayElementAtIndex(i).isExpanded)
@@ -56,38 +85,53 @@ public class CT_Editor : Editor
                                 break;
 
                             case CutsceneTracker.VN_Actions.Appear:
-                                CharacterAppear();
+                                charactersAppearing++;
                                 break;
 
                             case CutsceneTracker.VN_Actions.Backgound:
-                                SwitchBackground();
+                                numBackgrounds++;
                                 break;
 
                             case CutsceneTracker.VN_Actions.Move:
-                                MoveCharacter();
+                                numMovedCharacter++;
                                 break;
 
                             case CutsceneTracker.VN_Actions.Remove:
-                                RemoveCharacter();
+                                numRemovedChars++;
                                 break;
 
                             case CutsceneTracker.VN_Actions.Rotate:
-                                RotateCharacter();
+                                numRotatingCharacters++;
                                 break;
 
                             case CutsceneTracker.VN_Actions.Shake:
-                                ShakeObject();
+                                shakeObjects++;
                                 break;
 
                             case CutsceneTracker.VN_Actions.ChangePose:
-                                ChangePose();
+                                numOfPosChanges++;
                                 break;
                         }
                         // Then call the respective functions down here, this way the exact amount of each string value will be called
                         //NumOfInputLines(ct_Script, numOfLinesPerScene, i);
                     }
                     NumOfInputLines(ct_Script, numOfLinesPerScene, i);
+                    CharacterAppear(ct_Script, charactersAppearing, i);
+                    SwitchBackground(ct_Script, charactersAppearing, i);
+                    MoveCharacter(ct_Script, charactersAppearing, i);
+                    RemoveCharacter(ct_Script, charactersAppearing, i);
+                    RotateCharacter(ct_Script, charactersAppearing, i);
+                    ShakeObject(ct_Script, charactersAppearing, i);
+                    ChangePose(ct_Script, numOfPosChanges, i);
+
                     numOfLinesPerScene = 0;
+                    charactersAppearing = 0;
+                    numBackgrounds = 0;
+                    numMovedCharacter = 0;
+                    numRemovedChars = 0;
+                    numRotatingCharacters = 0;
+                    shakeObjects = 0;
+                    numOfPosChanges = 0;
                 }                
             }
         }
@@ -99,7 +143,12 @@ public class CT_Editor : Editor
         EditorGUILayout.PropertyField(serializedObject.FindProperty("displayText"));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("continueText"));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("nameText"));
-        serializedObject.ApplyModifiedProperties();
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("PNCOverlay"));
+
+        if (GUI.changed)
+        {
+            serializedObject.ApplyModifiedProperties();
+        }
     }
 
     public static void Show(SerializedProperty list)
@@ -116,7 +165,7 @@ public class CT_Editor : Editor
 
     IEnumerator wait()
     {
-        yield return null;
+        yield return new WaitForSecondsRealtime(1f); ;
     }
 
     void NumOfInputLines(CutsceneTracker ct_Script, int linesPerScene, int whichScene)
@@ -124,26 +173,14 @@ public class CT_Editor : Editor
         //EditorGUILayout.PropertyField(serializedObject.FindProperty("GameLines"));
         //EditorGUILayout.PropertyField(serializedObject.FindProperty("GameNames"));
 
-        try
+        if (ct_Script.GameLines.Length != ct_Script.performableActions.Length)
         {
-            if (ct_Script.GameLines[whichScene] == null)
-            {
-                Array.Resize(ref ct_Script.GameLines, ct_Script.GameLines.Length + 1);
-            }
-        }
-        catch (Exception)
-        {
-            Array.Resize(ref ct_Script.GameLines, ct_Script.GameLines.Length + 1);
+            Array.Resize(ref ct_Script.GameLines, ct_Script.performableActions.Length);
+            Array.Resize(ref ct_Script.GameNames, ct_Script.performableActions.Length);
         }
 
-        List<string> SceneText = ct_Script.GameLines[whichScene].sceneText;
-        List<string> NameText = ct_Script.GameNames[whichScene].sceneText;
-
-        if (SceneText == null) // TODO Fic
-        {
-            SceneText.Add("");
-            NameText.Add("");
-        }
+        var SceneText = ct_Script.GameLines[whichScene].sceneText;
+        var NameText = ct_Script.GameNames[whichScene].sceneText;
 
         if (linesPerScene != 0 || SceneText.Count != 0)
         {
@@ -160,49 +197,87 @@ public class CT_Editor : Editor
                     NameText.RemoveAt(NameText.Count - 1);
                 }
             }
+
+            //actionScrollPos = EditorGUILayout.BeginScrollView(actionScrollPos, true, true, GUILayout.Width(400));
+            actionScrollPos = EditorGUILayout.BeginScrollView(actionScrollPos, true, true);
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("GameNames").GetArrayElementAtIndex(whichScene), new GUIContent("N " + whichScene));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("GameLines").GetArrayElementAtIndex(whichScene), new GUIContent("S " + whichScene));
+            EditorGUILayout.EndHorizontal();
+            EditorGUILayout.EndScrollView();
         }
-        EditorGUILayout.BeginHorizontal();
-        //scrollPos = EditorGUILayout.BeginScrollView(scrollPos, GUILayout.Height(100), GUILayout.Width(400));
-        //scrollPos = EditorGUILayout.BeginScrollView(scrollPos, GUILayout.Width(100));
-        EditorGUILayout.PropertyField(serializedObject.FindProperty("GameNames").GetArrayElementAtIndex(whichScene), new GUIContent("N " + whichScene));
-        EditorGUILayout.PropertyField(serializedObject.FindProperty("GameLines").GetArrayElementAtIndex(whichScene), new GUIContent("S " + whichScene));
-        //EditorGUILayout.EndScrollView();
-        EditorGUILayout.EndHorizontal();
     }
 
-    void CharacterAppear()
+    void CharacterAppear(CutsceneTracker ct_Script, int charactersPerScene, int whichScene)
     {
 
     }
 
-    void SwitchBackground()
+    void SwitchBackground(CutsceneTracker ct_Script, int backgroundsPerScene, int whichScene)
     {
 
     }
 
-    void MoveCharacter()
+    void MoveCharacter(CutsceneTracker ct_Script, int movmentsPerScene, int whichScene)
     {
 
     }
 
-    void RemoveCharacter()
+    void RemoveCharacter(CutsceneTracker ct_Script, int removePerScene, int whichScene)
     {
 
     }
 
-    void RotateCharacter()
+    void RotateCharacter(CutsceneTracker ct_Script, int rotatesPerScene, int whichScene)
     {
 
     }
 
-    void ShakeObject()
+    void ShakeObject(CutsceneTracker ct_Script, int shakesPerScene, int whichScene)
     {
 
     }
 
-    void ChangePose()
+    void ChangePose(CutsceneTracker ct_Script, int posesPerScene, int whichScene)
     {
+        //EditorGUILayout.PropertyField(serializedObject.FindProperty("currentPos"));
+        //EditorGUILayout.PropertyField(serializedObject.FindProperty("newPos"));
 
+        //Makes sure the length of Position arrays are the same as the Performable Action arrays
+        if (ct_Script.currentPos.Length != ct_Script.performableActions.Length)
+        {
+            Array.Resize(ref ct_Script.currentPos, ct_Script.performableActions.Length);
+            Array.Resize(ref ct_Script.newPos, ct_Script.performableActions.Length);
+        }
+
+        //Instanciates them into varables
+        var StartPos = ct_Script.currentPos[whichScene].sceneObject;
+        var NewPos = ct_Script.newPos[whichScene].sceneObject;
+
+        //If there is any integer bigger then zero then it constantly checks to make sure that everything is displayed corectly
+        if (posesPerScene != 0 || StartPos.Count != 0 || NewPos.Count != 0)
+        {
+            //If the number of pose changes in either array's don't match then this makes sure that they do
+            if (StartPos.Count != posesPerScene || NewPos.Count != posesPerScene)
+            {
+                if (StartPos.Count < posesPerScene || NewPos.Count < posesPerScene)
+                {
+                    StartPos.Add(ct_Script.transitionOverlay);
+                    NewPos.Add(ct_Script.transitionOverlay);
+                }
+                else if (StartPos.Count > posesPerScene || NewPos.Count > posesPerScene)
+                {
+                    StartPos.RemoveAt(StartPos.Count - 1);
+                    NewPos.RemoveAt(NewPos.Count - 1);
+                }
+            }
+
+            EditorGUILayout.LabelField("Don't touch the +- buttons for the lists bellow");
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("currentPos").GetArrayElementAtIndex(whichScene), new GUIContent("C " + whichScene));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("newPos").GetArrayElementAtIndex(whichScene), new GUIContent("N " + whichScene));
+            EditorGUILayout.EndHorizontal();
+        }
     }
 
     /*void DisplayText(int lineNumber, int x, int y,  CutsceneTracker ct_Script)

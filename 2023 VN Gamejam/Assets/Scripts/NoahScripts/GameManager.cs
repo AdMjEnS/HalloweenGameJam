@@ -222,5 +222,48 @@ public class GameManager : MonoBehaviour
         {
             showPuzzleTimer.text = string.Format("{0:00} : {1:00}", puzzleMin, puzzleSec);
         }
+        /*
+        if (true)
+        {
+            for (int i = 0; i < performableActions[currentScene].Actions.Count; i++)
+            {
+                switch (CT_Actions[currentScene].Actions[i])
+                {
+                    case CutsceneTracker.VN_Actions.Line:
+                        LoadTextDialogue(GameLines[currentScene].sceneText[numOfLinesPerScene], GameNames[currentScene].sceneText[numOfLinesPerScene]);
+                        numOfLinesPerScene++;
+                        break;
+
+                    case CutsceneTracker.VN_Actions.Appear:
+                        charactersAppearing++;
+                        break;
+
+                    case CutsceneTracker.VN_Actions.Backgound:
+                        numBackgrounds++;
+                        break;
+
+                    case CutsceneTracker.VN_Actions.Move:
+                        numMovedCharacter++;
+                        break;
+
+                    case CutsceneTracker.VN_Actions.Remove:
+                        numRemovedChars++;
+                        break;
+
+                    case CutsceneTracker.VN_Actions.Rotate:
+                        numRotatingCharacters++;
+                        break;
+
+                    case CutsceneTracker.VN_Actions.Shake:
+                        shakeObjects++;
+                        break;
+
+                    case CutsceneTracker.VN_Actions.ChangePose:
+                        numOfPosChanges++;
+                        break;
+                }
+            }
+        }*/
     }
+
 }
