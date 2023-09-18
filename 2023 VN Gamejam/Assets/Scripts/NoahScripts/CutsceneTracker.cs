@@ -31,6 +31,22 @@ public class CutsceneTracker : MonoBehaviour
     public SceneText[] GameLines;
     public SceneText[] GameNames;
 
+    public SceneObjects[] charactersToAppear;
+    public SceneObjects[] charactersToDisapear;
+    public SceneObjects[] charactersToMirror;
+
+    public SceneObjects[] objectsToShake;
+    public SceneNumbers[] intensityOfShake;
+
+    public SceneObjects[] charactersToMove;
+    public SceneLocations[] locationsToMove;
+    public SceneNumbers[] speedtoMove;
+
+    public SceneSprite[] Backgrounds;
+
+    public SceneImages[] currentPose;
+    public SceneSprite[] newPose;
+
     public GameObject transitionOverlay;
     public GameObject PNCOverlay;
     public Image transitionPicture;
@@ -42,23 +58,57 @@ public class CutsceneTracker : MonoBehaviour
     public SceneText[] saveRandomPreText;
     public Sprite[] saveRandomImages;
 
-    public SceneObjects[] currentPos;
-    public SceneObjects[] newPos;
+    //public SceneObjects[] currentPos;
+    //public SceneObjects[] newPos;
 
     public bool PNCActive = false;
     public GameObject[] items;
     public int count;
 
+    private int numOfLinesPerScene = 0;
+    private int charactersAppearing = 0;
+    private int numBackgrounds = 0;
+    private int numMovedCharacter = 0;
+    private int numRemovedChars = 0;
+    private int numRotatingCharacters = 0;
+    private int shakeObjects = 0;
+    private int numOfPosChanges = 0;
+
     [Serializable]
     public class SceneText
     {
-        public List<string> sceneText;
+        [TextArea(1, 5)]
+        public List<string> sceneText = new List<string>();
+    }
+
+    [Serializable]
+    public class SceneNumbers
+    {
+        public List<float> sceneNumbers = new List<float>();
     }
 
     [Serializable]
     public class SceneObjects
     {
         public List<GameObject> sceneObject = new List<GameObject>();
+    }
+
+    [Serializable]
+    public class SceneLocations
+    {
+        public List<Vector3> sceneLocations = new List<Vector3>();
+    }
+
+    [Serializable]
+    public class SceneImages
+    {
+        public List<Image> sceneImages = new List<Image>();
+    }
+
+    [Serializable]
+    public class SceneSprite
+    {
+        public List<Sprite> sceneSprites = new List<Sprite>();
     }
 
     [Serializable]
@@ -69,7 +119,7 @@ public class CutsceneTracker : MonoBehaviour
 
     public void Awake()
     {
-        StartCoroutine(BegginingOfGameText());
+        //StartCoroutine(BegginingOfGameText(0));
     }
 
     public void Update()
@@ -93,23 +143,66 @@ public class CutsceneTracker : MonoBehaviour
         }
     }
 
-    public IEnumerator BegginingOfGameText()
+    public IEnumerator VisualNovelSceneCurator(int currentScene)
     {
         transitionOverlay.SetActive(true);
         continueText.enabled = false;
         if (true)
         {
-            for (int i = 0; i < GameLines.Length; i++)
+            for (int i = 0; i < performableActions[currentScene].Actions.Length; i++)
             {
-                for (int j = 0; j < GameLines[i].sceneText.Count; j++)
+                switch (performableActions[currentScene].Actions[i])
                 {
-                    yield return StartCoroutine(LoadTextDialogue(GameLines[i].sceneText[j], GameNames[i].sceneText[j]));
-                    //sm.transitionAudio.clip = sm.savingRandomStartAudio[i];
-                    //sm.transitionAudio.Play();
+                    case VN_Actions.Line:
+                        LoadTextDialogue(GameLines[currentScene].sceneText[numOfLinesPerScene], GameNames[currentScene].sceneText[numOfLinesPerScene]);
+                        numOfLinesPerScene++;
+                        break;
 
+                    case VN_Actions.Appear:
+                        Appear(charactersToAppear[currentScene].sceneObject[charactersAppearing]);
+                        charactersAppearing++;
+                        break;
+
+                    case VN_Actions.Backgound:
+                        Backgound(Backgrounds[currentScene].sceneSprites[numBackgrounds]);
+                        numBackgrounds++;
+                        break;
+
+                    case VN_Actions.Move:
+                        Move(charactersToMove[currentScene].sceneObject[numMovedCharacter], locationsToMove[currentScene].sceneLocations[numMovedCharacter], speedtoMove[currentScene].sceneNumbers[numMovedCharacter]);
+                        numMovedCharacter++;
+                        break;
+
+                    case VN_Actions.Remove:
+                        Remove(charactersToDisapear[currentScene].sceneObject[numRemovedChars]);
+                        numRemovedChars++;
+                        break;
+
+                    case VN_Actions.Mirror:
+                        //Mirror(charactersToMirror[currentScene].sceneObject[numRotatingCharacters]);
+                        numRotatingCharacters++;
+                        break;
+
+                    case VN_Actions.Shake:
+                        shakeObjects++;
+                        break;
+
+                    case VN_Actions.ChangePose:
+                        ChangePose(currentPose[currentScene].sceneImages[numOfLinesPerScene], newPose[currentScene].sceneSprites[numOfLinesPerScene]);
+                        numOfPosChanges++;
+                        break;
                 }
             }
         }
+        numOfLinesPerScene = 0;
+        charactersAppearing = 0;
+        numBackgrounds = 0;
+        numMovedCharacter = 0;
+        numRemovedChars = 0;
+        numRotatingCharacters = 0;
+        shakeObjects = 0;
+        numOfPosChanges = 0;
+        yield return null;
     }
 
     IEnumerator LoadTextDialogue(string text, string name)
@@ -175,13 +268,13 @@ public class CutsceneTracker : MonoBehaviour
     {
 
     }
-    void Mirror(RectTransform trans)
+    /*void Mirror(RectTransform trans)
     {
         trans.rotation = new Quaternion(trans.rotation.x,trans.rotation.y + 180, trans.rotation.z, trans.rotation.w);
-    }
-    void Move(GameObject obj, Vector3 startPos, Vector3 endPos, float timeToMove)
+    }*/
+    void Move(GameObject obj, Vector3 endPos, float timeToMove)
     {
-        StartCoroutine(MoveLerp(obj, startPos, endPos, timeToMove));
+        //StartCoroutine(MoveLerp(obj, startPos, endPos, timeToMove));
     }
 
     IEnumerator MoveLerp(GameObject obj, Vector3 startPos, Vector3 endPos, float timeToMove)
