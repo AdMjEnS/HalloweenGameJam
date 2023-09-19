@@ -53,10 +53,13 @@ MonoBehaviour:
   - Actions: 000000000100000000000000050000000000000002000000
   - Actions: 000000000100000000000000050000000000000002000000
   numberOfTrees: 0
-  actionToPreform:
-  - erterteert
-  - sdfs
-  - wew
+  sceneNames:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   Lines:
   - jnbvcde
   - sdf
@@ -79,382 +82,6 @@ MonoBehaviour:
     - Work Out
   - sceneText:
     - '*'
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
-  - sceneText:
-    - 
     - 
     - 
   - sceneText:
@@ -492,100 +119,88 @@ MonoBehaviour:
     - 
     - 
     - 
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
-  - sceneText: []
+  charactersToAppear:
+  - sceneObject: []
+  - sceneObject: []
+  - sceneObject:
+    - {fileID: 0}
+  - sceneObject: []
+  - sceneObject: []
+  - sceneObject: []
+  charactersToDisapear:
+  - sceneObject: []
+  - sceneObject: []
+  - sceneObject:
+    - {fileID: 0}
+  - sceneObject: []
+  - sceneObject: []
+  - sceneObject: []
+  charactersToMirror:
+  - sceneObject: []
+  - sceneObject: []
+  - sceneObject: []
+  - sceneObject: []
+  - sceneObject: []
+  - sceneObject: []
+  objectsToShake:
+  - sceneObject: []
+  - sceneObject: []
+  - sceneObject: []
+  - sceneObject: []
+  - sceneObject: []
+  - sceneObject: []
+  intensityOfShake:
+  - sceneNumbers: []
+  - sceneNumbers: []
+  - sceneNumbers: []
+  - sceneNumbers: []
+  - sceneNumbers: []
+  - sceneNumbers: []
+  charactersToMove:
+  - sceneObject: []
+  - sceneObject: []
+  - sceneObject:
+    - {fileID: 0}
+  - sceneObject: []
+  - sceneObject: []
+  - sceneObject: []
+  locationsToMove:
+  - sceneLocations: []
+  - sceneLocations: []
+  - sceneLocations:
+    - {x: 0, y: 0, z: 0}
+  - sceneLocations: []
+  - sceneLocations: []
+  - sceneLocations: []
+  speedtoMove:
+  - sceneNumbers: []
+  - sceneNumbers: []
+  - sceneNumbers:
+    - 0
+  - sceneNumbers: []
+  - sceneNumbers: []
+  - sceneNumbers: []
+  Backgrounds:
+  - sceneSprites: []
+  - sceneSprites: []
+  - sceneSprites: []
+  - sceneSprites: []
+  - sceneSprites: []
+  - sceneSprites: []
+  currentPose:
+  - sceneImages: []
+  - sceneImages: []
+  - sceneImages: []
+  - sceneImages: []
+  - sceneImages: []
+  - sceneImages: []
+  newPose:
+  - sceneSprites: []
+  - sceneSprites: []
+  - sceneSprites: []
+  - sceneSprites: []
+  - sceneSprites: []
+  - sceneSprites: []
   transitionOverlay: {fileID: 0}
   PNCOverlay: {fileID: 0}
   transitionPicture: {fileID: 0}
@@ -602,6 +217,8 @@ MonoBehaviour:
   saveRandomImages: []
   PNCActive: 0
   items: []
+  count: 0
+  backgroundImage: {fileID: 0}
 --- !u!114 &577740833872231911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -614,43 +231,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afcfa3dc7db099b4a919e7a8368c167b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fastMusic: []
-  slowMusic: []
-  savingRandomGameAudio: []
-  savingFamilyGameAudio: []
-  relaxingNatureGameAudio: []
-  relaxingBreathingGameAudio: []
-  savoringGameAudio: []
-  paridoxicalIntentionsGameAudio: []
-  TimeSeneitiveGameAudio: []
-  transitionAudio: {fileID: 0}
-  duringGameVoice: {fileID: 0}
+  backgroundAudio: {fileID: 0}
+  duringLinesVoice: {fileID: 0}
   gm: {fileID: 0}
-  savingRandomStartAudio: []
-  savingRandomPreAudio: []
-  savingRandomPostAudio: []
-  savingRandomEndAudio: []
-  savingFamilyStartAudio: []
-  savingFamilyPreAudio: []
-  savingFamilyPostAudio: []
-  savingFamilyEndAudio: []
-  relaxingNatureStartAudio: []
-  relaxingNaturePreAudio: []
-  relaxingNaturePostAudio: []
-  relaxingNatureEndAudio: []
-  relaxingBreathingStartAudio: []
-  relaxingBreatingPreAudio: []
-  relaxingBreathingPostAudio: []
-  relaxingBreathingEndAudio: []
-  savoringStartAudio: []
-  savoringPreAudio: []
-  savoringPostAudio: []
-  savoringEndAudio: []
-  paridoxStartAudio: []
-  paridoxPreAudio: []
-  paridoxPostAudio: []
-  paridoxEndAudio: []
-  noReasonStartAudio: []
-  noReasonPreAudio: []
-  noReasonPostAudio: []
-  noReasonEndAudio: []
+  ct: {fileID: 577740833872231910}
+  audioSelector: 0
+  lineBeepBoops: []
+  linesAudio: []

@@ -15,14 +15,15 @@ public class CutsceneTracker : MonoBehaviour
         Mirror,             // Rotates a gameObject sprite on an axis so there facing the opposite direction
         Move,               // Moves a gameObject from where they are on the screen to another spot on the screen
         Backgound,          // Changes the background image
-        ChangePose          // Swaps either the gameObject or sprite of something to something else, likely used for when we want to have a character change there body pose mide conversation
+        ChangePose,          // Swaps either the gameObject or sprite of something to something else, likely used for when we want to have a character change there body pose mide conversation
+        Choice
     }
 
     public SceneActions[] performableActions;
 
     public int numberOfTrees;
 
-    public string[] actionToPreform;
+    public string[] sceneNames;
 
     public List<string> Lines;
 
@@ -47,23 +48,28 @@ public class CutsceneTracker : MonoBehaviour
     public SceneImages[] currentPose;
     public SceneSprite[] newPose;
 
+    public NestedDecitionText[] choices;
+    public NestedBranchingScene[] scenesToGoTo;
+    private List<int> decisionsMade = new List<int>();
+
     public GameObject transitionOverlay;
     public GameObject PNCOverlay;
     public Image transitionPicture;
     public Text displayText;
     public Text continueText;
     public Text nameText;
+    public ChoicePanal panel;
 
     public string[] saveRandomIntroText;
     public SceneText[] saveRandomPreText;
     public Sprite[] saveRandomImages;
 
-    //public SceneObjects[] currentPos;
-    //public SceneObjects[] newPos;
-
     public bool PNCActive = false;
     public GameObject[] items;
     public int count;
+
+    private int currentScene = 0;
+    private bool branchingScene = false;
 
     private int numOfLinesPerScene = 0;
     private int charactersAppearing = 0;
@@ -73,6 +79,7 @@ public class CutsceneTracker : MonoBehaviour
     private int numRotatingCharacters = 0;
     private int shakeObjects = 0;
     private int numOfPosChanges = 0;
+    private int numOfChoices = 0;
 
     [Serializable]
     public class SceneText
@@ -82,9 +89,21 @@ public class CutsceneTracker : MonoBehaviour
     }
 
     [Serializable]
+    public class NestedDecitionText
+    {
+        public SceneText[] nestedDecitions;
+    }
+
+    [Serializable]
     public class SceneNumbers
     {
-        public List<float> sceneNumbers = new List<float>();
+        public List<float> sceneNumbers = new List<float>();       
+    }
+
+    [Serializable]
+    public class NestedBranchingScene
+    {
+        public SceneNumbers[] nestedSceneBranching;
     }
 
     [Serializable]
@@ -119,7 +138,7 @@ public class CutsceneTracker : MonoBehaviour
 
     public void Awake()
     {
-        //StartCoroutine(BegginingOfGameText(0));
+        StartCoroutine(VisualNovelSceneCurator(2));
     }
 
     public void Update()
@@ -143,18 +162,26 @@ public class CutsceneTracker : MonoBehaviour
         }
     }
 
-    public IEnumerator VisualNovelSceneCurator(int currentScene)
+    public IEnumerator VisualNovelSceneCurator(int sceneToInitiate)
     {
         transitionOverlay.SetActive(true);
         continueText.enabled = false;
+        currentScene = sceneToInitiate;
         if (true)
         {
             for (int i = 0; i < performableActions[currentScene].Actions.Length; i++)
             {
+                if (branchingScene == true)
+                {
+                    i--;
+                    CountersReset();
+                    branchingScene = false;
+                }
+
                 switch (performableActions[currentScene].Actions[i])
                 {
                     case VN_Actions.Line:
-                        LoadTextDialogue(GameLines[currentScene].sceneText[numOfLinesPerScene], GameNames[currentScene].sceneText[numOfLinesPerScene]);
+                        yield return LoadTextDialogue(GameLines[currentScene].sceneText[numOfLinesPerScene], GameNames[currentScene].sceneText[numOfLinesPerScene]);
                         numOfLinesPerScene++;
                         break;
 
@@ -179,7 +206,7 @@ public class CutsceneTracker : MonoBehaviour
                         break;
 
                     case VN_Actions.Mirror:
-                        //Mirror(charactersToMirror[currentScene].sceneObject[numRotatingCharacters]);
+                        Mirror(charactersToMirror[currentScene].sceneObject[numRotatingCharacters]);
                         numRotatingCharacters++;
                         break;
 
@@ -191,18 +218,20 @@ public class CutsceneTracker : MonoBehaviour
                         ChangePose(currentPose[currentScene].sceneImages[numOfLinesPerScene], newPose[currentScene].sceneSprites[numOfLinesPerScene]);
                         numOfPosChanges++;
                         break;
+
+                    case VN_Actions.Choice:
+                        yield return Choice(choices[currentScene].nestedDecitions[numOfChoices].sceneText, scenesToGoTo[currentScene].nestedSceneBranching[numOfChoices].sceneNumbers);
+                        numOfChoices++;
+                        if (branchingScene == true)
+                        {
+                            i = 0;
+                        }
+                        break;
                 }
             }
         }
-        numOfLinesPerScene = 0;
-        charactersAppearing = 0;
-        numBackgrounds = 0;
-        numMovedCharacter = 0;
-        numRemovedChars = 0;
-        numRotatingCharacters = 0;
-        shakeObjects = 0;
-        numOfPosChanges = 0;
-        yield return null;
+        CountersReset();
+        Debug.Log("VN Scene Complete");
     }
 
     IEnumerator LoadTextDialogue(string text, string name)
@@ -268,10 +297,11 @@ public class CutsceneTracker : MonoBehaviour
     {
 
     }
-    /*void Mirror(RectTransform trans)
+    void Mirror(GameObject objToMirror)
     {
-        trans.rotation = new Quaternion(trans.rotation.x,trans.rotation.y + 180, trans.rotation.z, trans.rotation.w);
-    }*/
+        var trans = objToMirror.transform;
+        trans.rotation = new Quaternion(trans.rotation.x, trans.rotation.y + 180, trans.rotation.z, trans.rotation.w);
+    }
     void Move(GameObject obj, Vector3 endPos, float timeToMove)
     {
         //StartCoroutine(MoveLerp(obj, startPos, endPos, timeToMove));
@@ -301,7 +331,7 @@ public class CutsceneTracker : MonoBehaviour
         obj.sprite = img;
     }
 
-     IEnumerator RunPNC()
+    IEnumerator RunPNC()
     {
         
         transitionOverlay.SetActive(false);
@@ -323,6 +353,44 @@ public class CutsceneTracker : MonoBehaviour
 
     }
 
+    IEnumerator Choice(List<string> choices, List<float> outcomes)
+    {
+        string[] arrayChoices = choices.ToArray();
+
+        panel.Show("Choose Wisely", arrayChoices);
+
+        while (panel.isWaitingOnUserChoice)
+        {
+            yield return null;
+        }
+
+        var dicision = panel.lastDecision;
+
+        decisionsMade.Add(dicision.answerIndex);
+
+        Debug.Log(outcomes[dicision.answerIndex]);
+        Debug.Log(currentScene);
+        if (outcomes[dicision.answerIndex] != currentScene)
+        {
+            currentScene = (int)outcomes[dicision.answerIndex];
+            branchingScene = true;
+            Debug.Log("Entering New Scene");
+        }
+
+        Debug.Log($"Made choice {dicision.answerIndex} '{dicision.choices[dicision.answerIndex]}'");
+    }
 
 
+    private void CountersReset()
+    {
+        numOfLinesPerScene = 0;
+        charactersAppearing = 0;
+        numBackgrounds = 0;
+        numMovedCharacter = 0;
+        numRemovedChars = 0;
+        numRotatingCharacters = 0;
+        shakeObjects = 0;
+        numOfPosChanges = 0;
+        numOfChoices = 0;
+    }
 }

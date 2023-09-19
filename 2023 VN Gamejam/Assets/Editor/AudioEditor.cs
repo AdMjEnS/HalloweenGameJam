@@ -7,7 +7,7 @@ using System;
 [CustomEditor(typeof(SoundManager))]
 public class AudioEditor : Editor
 {
-    public override void OnInspectorGUI()
+    /*public override void OnInspectorGUI()
     {
         SoundManager audioScript = (SoundManager)target;
 
@@ -29,6 +29,6 @@ public class AudioEditor : Editor
         {
             serializedObject.ApplyModifiedProperties();
         }
-    }
+    }*/
     
 }
