@@ -56,21 +56,6 @@ public class CT_Editor : Editor
 
         EditorGUILayout.Space();
 
-        if (GUILayout.Button("Change Scene Name"))
-        {
-            EditorGUILayout.SelectableLabel("Change Scene Name");
-        }
-
-        EditorGUILayout.Space();
-
-        EditorGUILayout.TextField("Input Scene Name Here");
-
-        EditorGUILayout.Space();
-
-        EditorGUILayout.LabelField("Don't touch the +- buttons for the lists bellow");
-
-        EditorGUILayout.Space();
-
         var CT_Actions = ct_Script.performableActions;
         var serialCT_Actions = serializedObject.FindProperty("performableActions");
 
@@ -135,7 +120,7 @@ public class CT_Editor : Editor
                     RemoveCharacter(ct_Script, numRemovedChars, i);
                     RotateCharacter(ct_Script, numRotatingCharacters, i);
                     ShakeObject(ct_Script, shakeObjects, i);
-                    ChangePose(ct_Script, numOfPosChanges, i);
+                    ChangeSprite(ct_Script, numOfPosChanges, i);
                     MakeChoice(ct_Script, numOfChoices, i);
 
                     numOfLinesPerScene = 0;
@@ -154,7 +139,7 @@ public class CT_Editor : Editor
         EditorGUILayout.Space();
         
         EditorGUILayout.PropertyField(serializedObject.FindProperty("transitionOverlay"));
-        EditorGUILayout.PropertyField(serializedObject.FindProperty("transitionPicture"));
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("backgroundImage"));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("displayText"));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("continueText"));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("nameText"));
@@ -198,10 +183,30 @@ public class CT_Editor : Editor
         var SceneText = ct_Script.GameLines[whichScene].sceneText;
         var NameText = ct_Script.GameNames[whichScene].sceneText;
 
-        if (linesPerScene != 0 || SceneText.Count != 0)
+        if (linesPerScene != 0 || SceneText.Count != 0 || NameText.Count != 0)
         {
-            if (SceneText.Count != linesPerScene)
+            if (SceneText.Count != linesPerScene || NameText.Count != linesPerScene || SceneText.Count != NameText.Count)
             {
+                if (SceneText.Count != NameText.Count)
+                {
+                    if (SceneText.Count < linesPerScene)
+                    {
+                        SceneText.Add(null);
+                    }
+                    else if (SceneText.Count > linesPerScene)
+                    {
+                        SceneText.RemoveAt(SceneText.Count - 1);
+                    }
+                    else if (NameText.Count < linesPerScene)
+                    {
+                        NameText.Add(null);
+                    }
+                    else if (NameText.Count > linesPerScene)
+                    {
+                        NameText.RemoveAt(NameText.Count - 1);
+                    }
+                }
+
                 if (SceneText.Count < linesPerScene || NameText.Count < linesPerScene)
                 {
                     SceneText.Add("");
@@ -280,7 +285,7 @@ public class CT_Editor : Editor
             {
                 if (NewBackground.Count < backgroundsPerScene)
                 {
-                    NewBackground.Add(ct_Script.transitionPicture.sprite);
+                    NewBackground.Add(ct_Script.backgroundImage.sprite);
                 }
                 else if (NewBackground.Count > backgroundsPerScene)
                 {
@@ -319,6 +324,34 @@ public class CT_Editor : Editor
             //If the number of pose changes in either array's don't match then this makes sure that they do
             if (charToMove.Count != movmentsPerScene || locateMove.Count != movmentsPerScene || moveSpeed.Count != movmentsPerScene)
             {
+                if (charToMove.Count != locateMove.Count || charToMove.Count != moveSpeed.Count)
+                {
+                    if (charToMove.Count < movmentsPerScene)
+                    {
+                        charToMove.Add(null);
+                    }
+                    else if (charToMove.Count > movmentsPerScene)
+                    {
+                        charToMove.RemoveAt(charToMove.Count - 1);
+                    }
+                    else if (locateMove.Count < movmentsPerScene)
+                    {
+                        locateMove.Add(new Vector3());
+                    }
+                    else if (locateMove.Count > movmentsPerScene)
+                    {
+                        locateMove.RemoveAt(locateMove.Count - 1);
+                    }
+                    else if (moveSpeed.Count < movmentsPerScene)
+                    {
+                        moveSpeed.Add(0);
+                    }
+                    else if (moveSpeed.Count > movmentsPerScene)
+                    {
+                        moveSpeed.RemoveAt(moveSpeed.Count - 1);
+                    }
+                }
+
                 if (charToMove.Count < movmentsPerScene || locateMove.Count < movmentsPerScene || moveSpeed.Count < movmentsPerScene)
                 {
                     charToMove.Add(ct_Script.transitionOverlay);
@@ -456,10 +489,10 @@ public class CT_Editor : Editor
         }
     }
 
-    void ChangePose(CutsceneTracker ct_Script, int posesPerScene, int whichScene)
+    void ChangeSprite(CutsceneTracker ct_Script, int posesPerScene, int whichScene)
     {
-        //EditorGUILayout.PropertyField(serializedObject.FindProperty("currentPos"));
-        //EditorGUILayout.PropertyField(serializedObject.FindProperty("newPos"));
+        //EditorGUILayout.PropertyField(serializedObject.FindProperty("currentPose"));
+        //EditorGUILayout.PropertyField(serializedObject.FindProperty("newPose"));
 
         //Makes sure the length of Position arrays are the same as the Performable Action arrays
         if (ct_Script.currentPose.Length != ct_Script.performableActions.Length)
@@ -469,19 +502,39 @@ public class CT_Editor : Editor
         }
 
         //Instanciates them into varables
-        var StartPos = ct_Script.currentPose[whichScene].sceneImages;
+        var StartPos = ct_Script.currentPose[whichScene].sceneObject;
         var NewPos = ct_Script.newPose[whichScene].sceneSprites;
 
         //If there is any integer bigger then zero then it constantly checks to make sure that everything is displayed corectly
         if (posesPerScene != 0 || StartPos.Count != 0 || NewPos.Count != 0)
         {
             //If the number of pose changes in either array's don't match then this makes sure that they do
-            if (StartPos.Count != posesPerScene || NewPos.Count != posesPerScene)
+            if (StartPos.Count != posesPerScene || NewPos.Count != posesPerScene || StartPos.Count != NewPos.Count)
             {
+                if (StartPos.Count != NewPos.Count)
+                {
+                    if (StartPos.Count < posesPerScene)
+                    {
+                        StartPos.Add(null);
+                    }
+                    else if (StartPos.Count > posesPerScene)
+                    {
+                        StartPos.RemoveAt(StartPos.Count - 1);
+                    }
+                    else if (NewPos.Count < posesPerScene)
+                    {
+                        NewPos.Add(null);
+                    }
+                    else if (NewPos.Count > posesPerScene)
+                    {
+                        NewPos.RemoveAt(NewPos.Count - 1);
+                    }
+                }
+
                 if (StartPos.Count < posesPerScene || NewPos.Count < posesPerScene)
                 {
-                    StartPos.Add(ct_Script.transitionPicture);
-                    NewPos.Add(ct_Script.transitionPicture.sprite);
+                    StartPos.Add(null);
+                    NewPos.Add(null);
                 }
                 else if (StartPos.Count > posesPerScene || NewPos.Count > posesPerScene)
                 {
@@ -492,8 +545,8 @@ public class CT_Editor : Editor
 
             PoseScrollPos = EditorGUILayout.BeginScrollView(PoseScrollPos, true, true);
             EditorGUILayout.BeginHorizontal();
-            //EditorGUILayout.PropertyField(serializedObject.FindProperty("currentPos").GetArrayElementAtIndex(whichScene), new GUIContent("Current " + whichScene));
-            //EditorGUILayout.PropertyField(serializedObject.FindProperty("newPos").GetArrayElementAtIndex(whichScene), new GUIContent("New " + whichScene));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("currentPose").GetArrayElementAtIndex(whichScene), new GUIContent("Current " + whichScene));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("newPose").GetArrayElementAtIndex(whichScene), new GUIContent("New " + whichScene));
             EditorGUILayout.EndHorizontal();
             EditorGUILayout.EndScrollView();
         }

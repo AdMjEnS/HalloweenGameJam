@@ -46,7 +46,7 @@ public class CutsceneTracker : MonoBehaviour
 
     public SceneSprite[] Backgrounds;
 
-    public SceneImages[] currentPose;
+    public SceneObjects[] currentPose;
     public SceneSprite[] newPose;
 
     public NestedDecitionText[] choices;
@@ -55,7 +55,7 @@ public class CutsceneTracker : MonoBehaviour
 
     public GameObject transitionOverlay;
     public GameObject[] PNCOverlay;
-    public Image transitionPicture;
+    public Image backgroundImage;
     public Text displayText;
     public Text continueText;
     public Text nameText;
@@ -135,12 +135,13 @@ public class CutsceneTracker : MonoBehaviour
     [Serializable]
     public class SceneActions
     {
+        public string SceneName;
         public VN_Actions[] Actions;
     }
 
     public void Awake()
     {
-        StartCoroutine(VisualNovelSceneCurator(2));
+        StartCoroutine(VisualNovelSceneCurator(0));
     }
 
     public void Update()
@@ -198,7 +199,7 @@ public class CutsceneTracker : MonoBehaviour
                         break;
 
                     case VN_Actions.Move:
-                        Move(charactersToMove[currentScene].sceneObject[numMovedCharacter], locationsToMove[currentScene].sceneLocations[numMovedCharacter], speedtoMove[currentScene].sceneNumbers[numMovedCharacter]);
+                        StartCoroutine(MoveLerp(charactersToMove[currentScene].sceneObject[numMovedCharacter], locationsToMove[currentScene].sceneLocations[numMovedCharacter], speedtoMove[currentScene].sceneNumbers[numMovedCharacter])); 
                         numMovedCharacter++;
                         break;
 
@@ -217,7 +218,7 @@ public class CutsceneTracker : MonoBehaviour
                         break;
 
                     case VN_Actions.ChangePose:
-                        ChangePose(currentPose[currentScene].sceneImages[numOfLinesPerScene], newPose[currentScene].sceneSprites[numOfLinesPerScene]);
+                        ChangeSprite(currentPose[currentScene].sceneObject[numOfPosChanges], newPose[currentScene].sceneSprites[numOfPosChanges]);
                         numOfPosChanges++;
                         break;
 
@@ -241,14 +242,33 @@ public class CutsceneTracker : MonoBehaviour
         Debug.Log("VN Scene Complete");
     }
 
+    IEnumerator WaitForMidTextSkip()
+    {
+        while (!continueText.enabled)
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                continueText.enabled = true;
+            }
+            yield return null;
+        }
+    }
+
+
     IEnumerator LoadTextDialogue(string text, string name)
     {
         nameText.text = name;
+        StartCoroutine(WaitForMidTextSkip());
         for (int i = 0; i < text.Length; i++)
         {
             displayText.text = text.Substring(0, i);
 
             yield return new WaitForSecondsRealtime(0.03f);
+
+            if (continueText.enabled)
+            {
+                break;
+            }
         }
         displayText.text = text;
         
@@ -261,6 +281,7 @@ public class CutsceneTracker : MonoBehaviour
         continueText.enabled = true;
         yield return StartCoroutine(WaitForDownKey(KeyCode.Return));
         continueText.enabled = false;
+        yield return null;
     }
 
 
@@ -298,30 +319,33 @@ public class CutsceneTracker : MonoBehaviour
         var trans = objToMirror.transform;
         trans.rotation = new Quaternion(trans.rotation.x, trans.rotation.y + 180, trans.rotation.z, trans.rotation.w);
     }
+
     void Move(GameObject obj, Vector3 endPos, float timeToMove)
     {
         //StartCoroutine(MoveLerp(obj, startPos, endPos, timeToMove));
     }
 
-    IEnumerator MoveLerp(GameObject obj, Vector3 startPos, Vector3 endPos, float timeToMove)
+    IEnumerator MoveLerp(GameObject obj, Vector3 endPos, float timeToMove)
     {
-        transform.position = startPos;
         float elapsedTime = 0;
-        while (elapsedTime <= timeToMove)
+        while (elapsedTime <= timeToMove/3)
         {
-            transform.position = Vector3.Lerp(startPos, endPos, elapsedTime / timeToMove);
+            obj.transform.position = Vector3.Lerp(obj.transform.position, endPos, elapsedTime / timeToMove);
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-        transform.position = endPos;
     }
 
-    [SerializeField]
-    Image backgroundImage;
     void Backgound(Sprite img)
     {
         ChangePose(backgroundImage, img);
     }
+
+    void ChangeSprite(GameObject obj, Sprite img)
+    {
+        ChangePose(obj.GetComponent<Image>(), img);
+    }
+
     void ChangePose(Image obj, Sprite img)
     {
         obj.sprite = img;

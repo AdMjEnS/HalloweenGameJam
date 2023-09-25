@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 577740833872231911}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,9 +48,9 @@ MonoBehaviour:
   performableActions:
   - Actions: 06000000010000000000000005000000040000000000000002000000
   - Actions: 060000000100000000000000050000000300000002000000
-  - Actions: 000000000100000000000000050000000000000002000000
-  - Actions: 000000000100000000000000050000000000000002000000
-  - Actions: 000000000100000000000000050000000000000002000000
+  - Actions: 000000000100000000000000040000000000000008000000000000000000000009000000
+  - Actions: 020000000100000000000000
+  - Actions: 09000000
   - Actions: 000000000100000000000000050000000000000002000000
   numberOfTrees: 0
   sceneNames:
@@ -77,17 +77,14 @@ MonoBehaviour:
   - sceneText:
     - Nice To Meet You
   - sceneText:
-    - I Love
-    - When Things
-    - Work Out
+    - I love when the diolauge works.
+    - I love when I can see myself.
+    - Do you enjoy when things work as intended?
+    - I know right. It's the best!
+    - Lets try point and click now
   - sceneText:
-    - '*'
-    - 
-    - 
-  - sceneText:
-    - 
-    - 
-    - 
+    - Your Right. Things never work out the way you want them to.
+  - sceneText: []
   - sceneText:
     - 
     - 
@@ -100,89 +97,100 @@ MonoBehaviour:
     - Raptar
   - sceneText:
     - Jack
-    - Jack
     - Jill
-  - sceneText:
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
+    - Jill
     - 
     - 
   - sceneText:
-    - 
-    - 
-    - 
+    - Biz-Boy
+  - sceneText: []
   - sceneText:
     - 
     - 
     - 
   charactersToAppear:
-  - sceneObject: []
-  - sceneObject: []
+  - sceneObject:
+    - {fileID: 0}
+  - sceneObject:
+    - {fileID: 0}
+  - sceneObject:
+    - {fileID: 0}
   - sceneObject:
     - {fileID: 0}
   - sceneObject: []
-  - sceneObject: []
-  - sceneObject: []
+  - sceneObject:
+    - {fileID: 0}
   charactersToDisapear:
-  - sceneObject: []
+  - sceneObject:
+    - {fileID: 0}
+  - sceneObject:
+    - {fileID: 0}
   - sceneObject: []
   - sceneObject:
     - {fileID: 0}
   - sceneObject: []
-  - sceneObject: []
-  - sceneObject: []
+  - sceneObject:
+    - {fileID: 0}
   charactersToMirror:
+  - sceneObject:
+    - {fileID: 0}
   - sceneObject: []
-  - sceneObject: []
-  - sceneObject: []
+  - sceneObject:
+    - {fileID: 0}
   - sceneObject: []
   - sceneObject: []
   - sceneObject: []
   objectsToShake:
   - sceneObject: []
-  - sceneObject: []
+  - sceneObject:
+    - {fileID: 0}
   - sceneObject: []
   - sceneObject: []
   - sceneObject: []
   - sceneObject: []
   intensityOfShake:
   - sceneNumbers: []
-  - sceneNumbers: []
-  - sceneNumbers: []
-  - sceneNumbers: []
-  - sceneNumbers: []
-  - sceneNumbers: []
-  charactersToMove:
-  - sceneObject: []
-  - sceneObject: []
-  - sceneObject:
-    - {fileID: 0}
-  - sceneObject: []
-  - sceneObject: []
-  - sceneObject: []
-  locationsToMove:
-  - sceneLocations: []
-  - sceneLocations: []
-  - sceneLocations:
-    - {x: 0, y: 0, z: 0}
-  - sceneLocations: []
-  - sceneLocations: []
-  - sceneLocations: []
-  speedtoMove:
-  - sceneNumbers: []
-  - sceneNumbers: []
   - sceneNumbers:
     - 0
   - sceneNumbers: []
   - sceneNumbers: []
   - sceneNumbers: []
+  - sceneNumbers: []
+  charactersToMove:
+  - sceneObject:
+    - {fileID: 0}
+  - sceneObject:
+    - {fileID: 0}
+  - sceneObject: []
+  - sceneObject: []
+  - sceneObject: []
+  - sceneObject:
+    - {fileID: 0}
+  locationsToMove:
+  - sceneLocations:
+    - {x: -100, y: -130, z: 0}
+  - sceneLocations:
+    - {x: 0, y: 0, z: 0}
+  - sceneLocations: []
+  - sceneLocations: []
+  - sceneLocations: []
+  - sceneLocations:
+    - {x: 0, y: 0, z: 0}
+  speedtoMove:
+  - sceneNumbers:
+    - 0
+  - sceneNumbers:
+    - 0
+  - sceneNumbers: []
+  - sceneNumbers: []
+  - sceneNumbers: []
+  - sceneNumbers:
+    - 0
   Backgrounds:
-  - sceneSprites: []
-  - sceneSprites: []
+  - sceneSprites:
+    - {fileID: 21300000, guid: 29bbd7792277ef3419dc7b91a4f1255d, type: 3}
+  - sceneSprites:
+    - {fileID: 21300000, guid: 29bbd7792277ef3419dc7b91a4f1255d, type: 3}
   - sceneSprites: []
   - sceneSprites: []
   - sceneSprites: []
@@ -201,12 +209,35 @@ MonoBehaviour:
   - sceneSprites: []
   - sceneSprites: []
   - sceneSprites: []
+  choices:
+  - nestedDecitions: []
+  - nestedDecitions: []
+  - nestedDecitions:
+    - sceneText:
+      - Absolutly!
+      - If only thinks were that easy.
+  - nestedDecitions: []
+  - nestedDecitions: []
+  - nestedDecitions: []
+  scenesToGoTo:
+  - nestedSceneBranching: []
+  - nestedSceneBranching: []
+  - nestedSceneBranching:
+    - sceneNumbers:
+      - 2
+      - 3
+  - nestedSceneBranching: []
+  - nestedSceneBranching: []
+  - nestedSceneBranching: []
   transitionOverlay: {fileID: 0}
-  PNCOverlay: {fileID: 0}
+  PNCOverlay:
+  - {fileID: 0}
+  - {fileID: 0}
   transitionPicture: {fileID: 0}
   displayText: {fileID: 0}
   continueText: {fileID: 0}
   nameText: {fileID: 0}
+  panel: {fileID: 0}
   saveRandomIntroText: []
   saveRandomPreText:
   - sceneText: []
@@ -215,9 +246,10 @@ MonoBehaviour:
   - sceneText: []
   - sceneText: []
   saveRandomImages: []
-  PNCActive: 0
   items: []
   count: 0
+  numCompleted: 0
+  currentPNC: {fileID: 0}
   backgroundImage: {fileID: 0}
 --- !u!114 &577740833872231911
 MonoBehaviour:
