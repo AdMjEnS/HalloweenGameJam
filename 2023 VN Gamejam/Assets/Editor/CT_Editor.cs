@@ -335,10 +335,10 @@ public class CT_Editor : Editor
 
             MoveScrollPos = EditorGUILayout.BeginScrollView(MoveScrollPos, true, true);
             EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("charactersToMove").GetArrayElementAtIndex(whichScene), new GUIContent("Characters " + whichScene));
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("locationsToMove").GetArrayElementAtIndex(whichScene), new GUIContent("Locations " + whichScene));
             EditorGUILayout.PropertyField(serializedObject.FindProperty("speedtoMove").GetArrayElementAtIndex(whichScene), new GUIContent("Speed " + whichScene));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("charactersToMove").GetArrayElementAtIndex(whichScene), new GUIContent("Characters " + whichScene));
             EditorGUILayout.EndHorizontal();
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("locationsToMove").GetArrayElementAtIndex(whichScene), new GUIContent("Locations " + whichScene));
             EditorGUILayout.EndScrollView();
         }
     }
