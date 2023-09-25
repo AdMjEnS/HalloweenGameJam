@@ -16,7 +16,8 @@ public class CutsceneTracker : MonoBehaviour
         Move,               // Moves a gameObject from where they are on the screen to another spot on the screen
         Backgound,          // Changes the background image
         ChangePose,          // Swaps either the gameObject or sprite of something to something else, likely used for when we want to have a character change there body pose mide conversation
-        Choice
+        Choice,
+        PNC                  //Starts the Point and Click gameplay
     }
 
     public SceneActions[] performableActions;
@@ -53,7 +54,7 @@ public class CutsceneTracker : MonoBehaviour
     private List<int> decisionsMade = new List<int>();
 
     public GameObject transitionOverlay;
-    public GameObject PNCOverlay;
+    public GameObject[] PNCOverlay;
     public Image transitionPicture;
     public Text displayText;
     public Text continueText;
@@ -64,9 +65,10 @@ public class CutsceneTracker : MonoBehaviour
     public SceneText[] saveRandomPreText;
     public Sprite[] saveRandomImages;
 
-    public bool PNCActive = false;
     public GameObject[] items;
     public int count;
+    public int numCompleted = 0;
+    public GameObject currentPNC;
 
     private int currentScene = 0;
     private bool branchingScene = false;
@@ -219,6 +221,10 @@ public class CutsceneTracker : MonoBehaviour
                         numOfPosChanges++;
                         break;
 
+                    case VN_Actions.PNC:
+                        StartCoroutine(RunPNC());
+                        break;
+
                     case VN_Actions.Choice:
                         yield return Choice(choices[currentScene].nestedDecitions[numOfChoices].sceneText, scenesToGoTo[currentScene].nestedSceneBranching[numOfChoices].sceneNumbers);
                         numOfChoices++;
@@ -227,6 +233,7 @@ public class CutsceneTracker : MonoBehaviour
                             i = 0;
                         }
                         break;
+
                 }
             }
         }
@@ -237,29 +244,18 @@ public class CutsceneTracker : MonoBehaviour
     IEnumerator LoadTextDialogue(string text, string name)
     {
         nameText.text = name;
-        if (text != "*")
+        for (int i = 0; i < text.Length; i++)
         {
-            for (int i = 0; i < text.Length; i++)
-            {
-                displayText.text = text.Substring(0, i);
+            displayText.text = text.Substring(0, i);
 
-                yield return new WaitForSecondsRealtime(0.03f);
-            }
-            displayText.text = text;
+            yield return new WaitForSecondsRealtime(0.03f);
         }
-        else
-        {
-            PNCActive = true;
-        }
+        displayText.text = text;
+        
         /*while (sm.transitionAudio.isPlaying)
         {
             yield return 0;
         }*/
-
-        if(PNCActive == true)
-        {
-            StartCoroutine(RunPNC());
-        }
 
       
         continueText.enabled = true;
@@ -335,20 +331,22 @@ public class CutsceneTracker : MonoBehaviour
     {
         
         transitionOverlay.SetActive(false);
-        PNCOverlay.SetActive(true);
+
+        currentPNC = PNCOverlay[numCompleted];
+        currentPNC.SetActive(true);
+
         items = GameObject.FindGameObjectsWithTag("Item");
         count = items.Length;
-        Debug.Log(count);
        
-        for (; count > 0;)
+        while (count > 0)
         {
             yield return new WaitForSeconds(0.5f);
         }
 
         transitionOverlay.SetActive(true);
-        PNCOverlay.SetActive(false);
-        PNCActive = false;
-
+        currentPNC.SetActive(false);
+        numCompleted++;
+       
         StopCoroutine(RunPNC());
 
     }
