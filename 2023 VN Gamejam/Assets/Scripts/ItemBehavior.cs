@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemBehavior : MonoBehaviour
 {
     public GameObject manager;
+    public GameObject listText;
 
     private void Start()
     {
@@ -14,6 +15,7 @@ public class ItemBehavior : MonoBehaviour
     public void CollectObject()
     {
         manager.GetComponent<CutsceneTracker>().count--;
+        Destroy(listText);
         Destroy(this.gameObject);
         //Need to add actual functionality later
     }
