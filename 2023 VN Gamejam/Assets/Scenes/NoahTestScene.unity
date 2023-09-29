@@ -7522,6 +7522,42 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1045163964}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: choices.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: newPose.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: sceneNames.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: Backgrounds.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: currentPose.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: speedtoMove.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: scenesToGoTo.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: PNCOverlay.Array.data[0]
       value: 
       objectReference: {fileID: 836874540}
@@ -7530,16 +7566,132 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 452814867}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: objectsToShake.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: locationsToMove.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToMove.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: intensityOfShake.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToAppear.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToMirror.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: performableActions.Array.data[0].SceneName
       value: Opening Scene
       objectReference: {fileID: 0}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].SceneName
+      value: After Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].SceneName
+      value: Festival - Act 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[3].SceneName
+      value: After apartment gameplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[4].SceneName
+      value: Apartment - Act 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[5].SceneName
+      value: post Apartment gameplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[6].SceneName
+      value: Halloween Party
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[7].SceneName
+      value: Post Halloween Party Gameplay + end scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: GameLines.Array.data[0].sceneText.Array.size
-      value: 3
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[1].sceneText.Array.size
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[2].sceneText.Array.size
+      value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.size
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[4].sceneText.Array.size
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.size
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.size
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.size
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: GameNames.Array.data[0].sceneText.Array.size
-      value: 3
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.size
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.size
+      value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[3].sceneText.Array.size
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.size
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[5].sceneText.Array.size
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[6].sceneText.Array.size
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[7].sceneText.Array.size
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: newPose.Array.data[0].sceneSprites.Array.size
@@ -7563,8 +7715,1337 @@ PrefabInstance:
 '
       objectReference: {fileID: 0}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[3]
+      value: "I can't believe October's basically \r\n over\u2026. It\u2019s crazy
+        to think it's already almost over\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[4]
+      value: "It feels like I\u2019ve barely done anything, y'know, seasonal!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[5]
+      value: "Maybe I should ask Oscar! Yeah! It\u2019s been a while since we\u2019ve
+        hung out together."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[6]
+      value: Oscar emerges from his bedroom, dressed for work.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[7]
+      value: 'Why look who it is. You get your rest, Sleeping Beauty? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[8]
+      value: "Yeah\u2026 I guess. Morning to you too."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[9]
+      value: Soooo, I was thinking-
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[0]
+      value: 'Quinn explains to Oscar what the Tarot reader from earlier told her. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[1]
+      value: Oscar begrudgingly begins to shuffle the cards when one suddenly falls
+        out while he shuffles.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[2]
+      value: Oscar shows the card to Quinn, showing a solid tower struck by lightning,
+        as a man falls out of the window on fire.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[3]
+      value: 'After Quinn looks at the card''s meaning, worry begins to spread across
+        her face. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[4]
+      value: 'So? What does it mean?
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[5]
+      value: 'Uhhh, so with that card, the Tower I mean, is often interpreted as
+        meaning danger, crisis, destruction, and liberation. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[6]
+      value: "It\u2019s also associated with sudden unforeseen change. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[7]
+      value: "Huh, just my luck with you around. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[8]
+      value: "Aren\u2019t you worried? \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[9]
+      value: "No. Because this stuff isn\u2019t REALLY predicting the future. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[0]
+      value: After hours of going around the apartment and taking care of anything
+        that seemed dangerous, Quinn is exhausted after everything and decides to
+        take a nap.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[1]
+      value: 'She awakes later to hear Oscar coming in from work. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[2]
+      value: "Hey, look who\u2019s finally back. How was work? \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[3]
+      value: 'It was fine, relatively speaking. Someone called off, so I had to take
+        care of the store on my own for a few hours. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[4]
+      value: 'I got swamped with enough pumpkin spice latte orders to end world hunger. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[5]
+      value: "Quinn and Oscar chuckle at the joke he made. It\u2019s the first time
+        in weeks that they\u2019ve shared a laugh. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[6]
+      value: "So, what do you have planned for the rest of the night?  \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[7]
+      value: 'Hmmm, well, I was invited to a Halloween party by some coworkers, and
+        I was thinking of going. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[8]
+      value: "You\u2019re right about working myself to the bone, and I figured it
+        wouldn\u2019t hurt. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[9]
+      value: "I\u2019m gonna walk over there soon, since the party started about
+        an hour ago."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[0]
+      value: Quinn and Oscar left the apartment just a few minutes ago, and yet not
+        a single word has been spoken since they left.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[1]
+      value: "Although Quinn thought the tension in the air was gone, she senses
+        it creeping back slowly but surely as they get closer to the party. The deafening
+        silence is interrupted when Oscar begins to speak. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[2]
+      value: Hey, Quinn, I think that next year we shoul-
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[3]
+      value: "I\u2019m sorry. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[4]
+      value: "Huh? \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[5]
+      value: "I\u2019m sorry. I know I can be a bit too much for you sometimes."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[6]
+      value: "I\u2019ve always been the more energetic one since we met and I introduced
+        Mouse to your dog. We instantly became best friends, and so did them."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[7]
+      value: When we got accepted into the same university, I was so excited.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[8]
+      value: 'Yet, as time went on, it felt like you were distancing yourself each
+        day. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[9]
+      value: "That\u2019s not tru-\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[0]
+      value: "Quinn has taken care of all the hazards she could find around the party,
+        but she\u2019s exhausted her energy from all that moving."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[1]
+      value: 'She looks to go get a drink before she hears someone speak behind her. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[2]
+      value: "Hey Quinn, you got a minute? \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[3]
+      value: "Uh, sure. What\u2019s up? \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[4]
+      value: "Let\u2019s get some fresh air. The music in here is too loud.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[5]
+      value: "Quinn and Oscar walk outside to talk. Although Quinn isn\u2019t sure
+        of what\u2019s up with this conversation, she doesn\u2019t feel the tension
+        from earlier."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[6]
+      value: "I\u2019m sorry. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[7]
+      value: 'What? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[8]
+      value: "I\u2019m sorry. That doesn\u2019t excuse how I\u2019ve been acting
+        toward you. I\u2019ve been under a lot of stress balancing school and work."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[9]
+      value: "Everything\u2019s been getting to me, and it wasn\u2019t fair of me
+        to take it out on you. You\u2019re my best friend, and I shouldn\u2019t have
+        treated you like that. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: GameNames.Array.data[0].sceneText.Array.data[1]
       value: Mea
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[0]
+      value: Quinn is still messing around with things when she hears the front door
+        unlock. Oscar enters in a huff.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[1]
+      value: The dog barks in greeting, but Oscar doesn't even react.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[2]
+      value: Oscar lets out a heavy sigh as he walks into the living room, allowing
+        gravity to drag him onto the couch.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[3]
+      value: Sigh.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[4]
+      value: 'Hey there! How was your day?
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[5]
+      value: 'Good enough for me. But still not good enough for others, apparently.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[6]
+      value: 'As he forces his shoulders to relax, Oscar takes in the aftermath of
+        Quinn''s activities.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[7]
+      value: 'Well, I''m glad at least one of us was having fun.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[8]
+      value: 'He lets out another deep exhale. A sheepish expression crosses Quinn''s
+        face.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[9]
+      value: "Hey, what can I say, I\u2019m a productive person.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[0]
+      value: 'Quinn and Oscar walk around the event, seeing the vast amount of activities,
+        when Quinn suddenly sees a sign promoting a free tarot reading.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[1]
+      value: "Hey look, there\u2019s a tarot reader here. That sounds like fun!\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[2]
+      value: 'Really? Tarot? Pay 20 bucks to get a phony magic trick? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[3]
+      value: "Ahh come on. Don\u2019t be such a killjoy. Aren\u2019t you at least
+        a little curious?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[4]
+      value: "Also, the sign says they\u2019re FREE. Who can pass up something fun
+        AND free?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[5]
+      value: "Yeah, no. I\u2019d rather not waste my time instead."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[6]
+      value: "Well, suit yourself. I\u2019m going, and I can\u2019t wait to see what
+        my future holds.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[7]
+      value: "Sure, whatever. I\u2019ll meet you back here in an hour. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[8]
+      value: After walking into the tent, Quinn notices a table in the middle of
+        the tent where Halloween music plays in the background.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[9]
+      value: Quinn walks closer to the table and thinks how odd her environment feels,
+        considering her only experience with tarot was what her friends had told
+        her about.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[0]
+      value: Quinn wakes up to see the dog and Mouse asleep on her floor. The tarot
+        reading from last night still occupies her mind, so she gets up to check
+        on Oscar.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[1]
+      value: Quinn sees that Oscar's door is open, so she starts walking in.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[2]
+      value: Hey, you awake? I wanted to see ho-
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[3]
+      value: WAIT, I'M INDECENT!
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[4]
+      value: "Oscar's words don\u2019t set in for Quinn until she sees him getting
+        dressed with his prosthetic leg on the ground."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[5]
+      value: 'She quickly shuts the door, realizing her mistake. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[6]
+      value: "OH MY GOD, I\u2019M SO SORRY. I saw the door open, and I thought you\u2014
+        you know what, never mind."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[7]
+      value: "I\u2019ll just, uhhhhh, wait out here."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[8]
+      value: Quinn waits in the living room when Oscar exits his room dressed for
+        work.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[9]
+      value: "Next time, knock before you walk into someone\u2019s room. So, now
+        that I\u2019m decent, what do you want?\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[10]
+      value: "Listen, I really need to get going, can this wait until I\u2019m back?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[11]
+      value: I, uh... sure! You sure you can't stick around for a few?
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[12]
+      value: If you keep me here any longer, I'm going to be later than I already
+        am.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[13]
+      value: Oscar bites the interior of his cheek as he continues.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[14]
+      value: I'm already putting in overtime so I can pay for the damages from your
+        little visit to the shop.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[15]
+      value: Quinn's cheeks flush.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[16]
+      value: Oh, uh, yeah. Go ahead. Sorry.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[17]
+      value: Oscar glances back towards Quinn as he heads towards the front door,
+        but he briskly exits without another word, shutting the door behind him.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[18]
+      value: Sigh. So much for that idea.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[19]
+      value: Quinn sinks into her chair a bit. As she wallows in the wake of that
+        tense moment, a dog walks up to her.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[20]
+      value: "It's cheerful and excited, as dogs are wont to be. It had a flier in
+        its mouth.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[21]
+      value: "Hey there pup! Where\u2019d you come from?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[22]
+      value: "I wonder if Oscar didn\u2019t shut the door behind him fully.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[23]
+      value: "Whatcha got there? Is that our mail? \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[24]
+      value: Muffled Bark
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[25]
+      value: "Good dog. Guess I\u2019ll have to buy some \rdog treats for our newest
+        mailman.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[26]
+      value: 'Quinn reaches for the mail and takes out a flier sticking out. The
+        dog easily lets her take it.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[27]
+      value: "Well, this is a surprise. Looks like there\u2019s a Halloween festival
+        in town. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[28]
+      value: 'Wait, it starts tonight? This is perfect!
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[29]
+      value: 'She turns to look at the microwave clock.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[30]
+      value: "Oh... It\u2019s still morning. We have time to burn.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[0].sceneText.Array.data[31]
+      value: "Well, Oscar isn\u2019t gonna be home for a while so\u2026 gotta find
+        something to do around here.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[10]
+      value: "Why would I believe what cards have to dictate my life? \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[11]
+      value: "Tarot doesn\u2019t dictate your life. It just-\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[12]
+      value: "Listen, it\u2019s late, and I\u2019m tired. I\u2019m going to bed.
+        I suggest you do the same. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[13]
+      value: "Oscar goes towards his bedroom and shuts the door behind him. Quinn
+        looks worried for her friend. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[14]
+      value: 'Oh god. What if something bad happens tomorrow?
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[15]
+      value: "The dog walks up to Quinn with a sad whine. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[3].sceneText.Array.data[16]
+      value: "It\u2019s alright, buddy. I should\u2019ve listened to him earlier.
+        I\u2019ll introduce you to my cat Mouse, you\u2019ll love her.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[10]
+      value: "Quinn's initial excitement for the Oscar is cut short by a reminder
+        of the Oscar\u2019s tarot reading."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[11]
+      value: 'If she lets him walk there alone, who knows what kind of danger he
+        could encounter? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[12]
+      value: "That sounds fun! Would you mind if I tagged along? I don\u2019t have
+        anything else planned for tonight, and we still have some days left until
+        Halloween ends!\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[13]
+      value: "I don\u2019t know. This is the first time I\u2019m being treated with
+        respect at work, and I don\u2019t want that to go to waste. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[14]
+      value: I understand I made a bad first impression, but hey, second chances
+        are worth it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[15]
+      value: "Pleasseeeeee? I promise they\u2019ll be so impressed by you after I
+        tell them about some of our early adventures. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[16]
+      value: ' If this has anything to do with that readin-
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[17]
+      value: "It doesn\u2019t. I promise. I just\u2026 really want to be there for
+        my friend.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[18]
+      value: "\u2026\u2026Really? \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[19]
+      value: "Yes, really.  \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[20]
+      value: "Alright fine. I\u2019ll go get ready, and we can head out in a bit.
+        \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[21]
+      value: 'YES, thank you, Oscar. I promise they will love us by the end of the
+        night. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[5].sceneText.Array.data[22]
+      value: "The more you say that, the more I feel like I\u2019m going to regret
+        this. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[10]
+      value: Yes, Oscar. Yes, it is. Everything was clear after I showed up at your
+        work to surprise you for your birthday.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[11]
+      value: " I didn\u2019t mean to make that mess with the cake and coffee."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[12]
+      value: "Hell, I don\u2019t even know how my tripping with the cake in my hands
+        ruined that coffee machine. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[13]
+      value: "Well, you are taller than most people I know, and yet I\u2019ve never
+        seen someone try and replicate that Russian dance from Dance Justice 3.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[14]
+      value: "Yeah, well, you\u2019d do that too if you thought it\u2019d show your
+        friend how much you value your friendship. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[15]
+      value: "Silence once again encompasses the air after her words. This time,
+        it\u2019s Oscar who feels lost for words.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[16]
+      value: "If you want to live separately next semester, I get it. I\u2019ll start
+        looking for another place after we get back from the party. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[17]
+      value: "If you need space, then that\u2019s alright. As much as I can try and
+        say I didn\u2019t mean to do stuff to annoy you, I won\u2019t argue with
+        what\u2019s resulted because of it."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[18]
+      value: "Just promise me that we won\u2019t treat each other like strangers
+        after, okay?  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[19]
+      value: Quinn I-
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[20]
+      value: 'Then, Oscar is interrupted by the sound of Halloween music. It seems
+        there are not too many people here, just enough to warrant it being a party.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[21]
+      value: "Looks like we\u2019re here. I\u2019m going to go inside and get a drink.
+        I\u2019ll meet back up with you in an hour or so.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[22]
+      value: 'Quinn wait-
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[23]
+      value: "Quinn enters the house before Oscar can finish what he\u2019s saying. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[24]
+      value: "Even knowing that she\u2019s here to help her friend from danger, she
+        can\u2019t help but feel sorrow over what remains of her friendship. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[25]
+      value: Quinn has kept to herself for most of the party.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[26]
+      value: "She occasionally says hi to a few of Oscar\u2019s coworkers and tells
+        them about old memories of them together."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[27]
+      value: "Although she talks about him, she\u2019s kept a distant eye on him
+        throughout the party. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[28]
+      value: "I don\u2019t know how much longer this party will go, but there hasn\u2019t
+        been anything to worry about yet. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[29]
+      value: Quinn suddenly sees Oscar trip across the room as the plant above him
+        falls.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[30]
+      value: "Before she can get to him in time, one of Oscar\u2019s friends catches
+        it."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[31]
+      value: 'Quinn breathes a sigh of relief before she notices the number of hazards
+        around the apartment that could harm her Oscar. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[6].sceneText.Array.data[32]
+      value: "If I don\u2019t do something about these hazards, he\u2019s going to
+        end up hurting himself or worse. I gotta do something.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[10]
+      value: "Quinn is surprised by the change in his attitude; it\u2019s almost
+        unexpected in a sense. Quinn chuckles to herself and lightly punches Oscar
+        in the arm."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[11]
+      value: "Ow. What the heck was that for? \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[12]
+      value: "That's my way of saying \u201CI accept\u201D. I thought you knew that\u2019s
+        what I meant when I\u2019d hit you after you\u2019d apologized when we were
+        kids. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[13]
+      value: "Honestly, I thought it was just anger issues. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[14]
+      value: "Oscar and Quinn burst out laughing at their situation. Oscar isn\u2019t
+        aware of what\u2019s around him when he trips and falls on the grass."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[15]
+      value: 'A sudden shattering sound fills the air after their laughter. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[16]
+      value: 'Oh shit, Oscar! Are you okay?
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[17]
+      value: 'Oscar sits up to see that he fell on a beer bottle in the yard. His
+        prosthetic leg took most of the fall.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[18]
+      value: "Yeah, I\u2019m fine. Some jerk just left their beer bottle out here
+        in the yard. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[19]
+      value: "Aha! I told you the reading was right. It said an unforeseen change
+        could happen, and now look at you, your prosthetic is covered in beer. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[20]
+      value: 'Haha, Quinn. You win this time. Now will you please help me up? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[21]
+      value: 'I would like to go home now to clean this before I hear any more about
+        tarot from you. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[22]
+      value: 'Quinn helps Oscar up off the ground, and they begin to make their way
+        home. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[23]
+      value: "Also, I wasn\u2019t suggesting you move out earlier. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[24]
+      value: "Then what were you going on about \u201Cthinking about next semester?\u201D "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[25]
+      value: "I got a letter saying the landlord is gonna check our apartment next
+        week for pets, since pets aren\u2019t allowed there, and people keep seeing
+        Mouse lying in the window."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[26]
+      value: "So unless you want to move next year to an apartment that accepts pets,
+        I need you to hide all evidence of Mouse as soon as possible. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[27]
+      value: "That little shit. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameLines.Array.data[7].sceneText.Array.data[28]
+      value: "Quinn and Oscar share a laugh as they walk home after a wild Halloween.
+        \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[10]
+      value: 'And, uh, sorry that you''ve been working so much lately.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[11]
+      value: 'I would literally rather think of anything else right now.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[12]
+      value: 'The moment hangs there until the dog appears in Quinn''s peripheral,
+        wagging its tail almost expectantly.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[13]
+      value: 'That''s right! The festival!
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[14]
+      value: 'Well then, I''ve got something that''ll cheer you up!
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[15]
+      value: "\rI... \rAlright, what is it?\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[16]
+      value: "\rQuinn triumphantly displays the flier for the festival to Oscar\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[17]
+      value: '...And?
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[18]
+      value: "It's a festival! Here, in town! \r\nAnd it starts tonight!\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[19]
+      value: 'Come on, Quinn, you know I don''t
+
+        have time for things like
+        that.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[20]
+      value: "I have work in the morning, again.\r\nAnd besides, what would we even
+        do\r there?\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[21]
+      value: 'Quinn is taken aback.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[22]
+      value: 'What would we do? Normal festival stuff, dummy!
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[23]
+      value: 'Games, rides, fortunes! It''s almost Halloween, and we''ve hardly done
+        anything fun!
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[24]
+      value: 'Look, I... I''m just not really in the mood to go somewhere right now.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[25]
+      value: "I\u2019m tired, and I've got to put in as many hours as I can, and...\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[26]
+      value: 'Don''t give me that! If you work yourself to the bone, you''ll never
+        get anywhere!
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[27]
+      value: 'If you wanna work yourself to death, be my guest!
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[28]
+      value: 'You... have a point.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[29]
+      value: 'Of course, I do! I always do! This kinda thing is exactly what you
+        need!
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[30]
+      value: 'Recharge the ol'' batteries with some classic Halloween festivities,
+        y''know?
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[31]
+      value: 'Now Oscar is the one looking sheepish.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[32]
+      value: 'I... alright, fine. Just promise me we''ll be back at a reasonable
+        hour.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[33]
+      value: 'Yeah yeah.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[34]
+      value: 'Let me go change then.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[35]
+      value: 'Oscar goes to his bedroom and shuts the door.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[36]
+      value: 'This is great! I can''t believe I convinced him!
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[37]
+      value: 'I honestly didn''t think he''d wanna go anywhere with me...
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[38]
+      value: 'The dog comes up to Quinn, tail eternally wagging.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[39]
+      value: 'Oh, who''s a good boy? You really saved the day here! I owe you a pizza,
+        or a bone, or maybe even a sandwich?
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[40]
+      value: 'The dog barks with excitement at the mention of a sandwich, smiling
+        ear to ear as their tail wags.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[41]
+      value: "A sandwich it is. Just like Oscar\u2019s old dog. He LOVED the sandwiches
+        I made for him.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[42]
+      value: 'As she finishes speaking, Oscar returns in more appropriate attire.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[43]
+      value: 'Who are you talking to?
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[44]
+      value: 'Oh, nobody. Just showing some gratitude to the mascot in this apartment.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[45]
+      value: 'Alright then... Are we leaving, or not?
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[1].sceneText.Array.data[46]
+      value: 'No, for sure! Let''s go!
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[10]
+      value: 'Her thoughts are interrupted by a voice. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[11]
+      value: "Why hello there dear. How are you this evening? Are you looking to
+        see what fate has in store for you? \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[12]
+      value: Quinn is confused by the relaxed attitude coming from the tarot reader.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[13]
+      value: "Quinn was expecting the older woman to put on an act for the people
+        who entered, yet Quinn couldn\u2019t determine if her relaxed attitude was
+        comforting or not."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[14]
+      value: "Uhh, I\u2019m doing well. And yes, that\u2019s why I\u2019m here. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[15]
+      value: "Wonderful. Take a seat at the table, and I\u2019ll be with you shortly.
+        \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[16]
+      value: Quinn sits down and sees the tarot reader collect a deck of cards that
+        looks to have something resting on top of them.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[17]
+      value: 'The tarot reader returns and Quinn begins to speak. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[18]
+      value: "Was that quartz you had on those cards over there?  \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[19]
+      value: "Looks like somebody\u2019s familiar with tarot. Have you had a reading
+        before? "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[20]
+      value: "Oh no, this is my first reading. I have friends who also use tarot
+        cards, and they\u2019ve told me a little bit about the process.  \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[21]
+      value: "Well, I\u2019m glad to be the first to give you a reading. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[22]
+      value: "You\u2019re right; that was quartz. I place a clear quartz on top of
+        a deck to cleanse them after each use. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[23]
+      value: "A look of curiosity and interest crosses Quinn\u2019s face as the tarot
+        reader sits across from her and begins speaking.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[24]
+      value: "Welcome to your reading. To begin, I\u2019d like you to put your essence
+        into the deck."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[25]
+      value: 'You could hold the deck close to your heart, kiss it, or do something
+        unique to you. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[26]
+      value: The tarot reader hands the deck of cards to Quinn. Quinn looks down
+        at the cards and holds them to her heart with both hands.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[27]
+      value: After a few seconds, she looks up at the tarot reader again.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[28]
+      value: "Well done. Now, I\u2019m going to have you shuffle the cards. Once
+        you\u2019ve shuffled them, I want you to pick out a card. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[29]
+      value: "However, if a card falls out while shuffling, then that is your card.
+        \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[30]
+      value: Quinn begins to shuffle the cards, determined to avoid having a card
+        fall out after this newfound knowledge.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[31]
+      value: After shuffling the cards a few times, Quinn stops and places the cards
+        face down on the table.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[32]
+      value: "Excellent. You may draw your card now. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[33]
+      value: "Quinn draws the card on the top deck and sees the image of a woman
+        with a royal getup with two sphinxes lying in front of her chariot. Quinn
+        shows the tarot reader what she drew. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[34]
+      value: Ah, the Chariot. A wonderful card, to say the least. The Chariot is
+        about progressing forward in a positive direction and overcoming conflict.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[35]
+      value: 'One needs to keep moving forward. Through sheer hard work and commitment,
+        they will be victorious. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[36]
+      value: "So this card is saying that I need to keep moving forward and overcome
+        conflict to become victorious. Like something good is going to happen, and
+        I need to accomplish it soon?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[37]
+      value: "Not really. Tarot doesn\u2019t tell you about your future. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[38]
+      value: Instead, it is an enlightening experience meant to help you think about
+        the way you think and help you perceive how the card relates to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[39]
+      value: "Also, there are no good and bad cards in tarot. Cards may warn you,
+        but there\u2019s no inherent badness to them. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[40]
+      value: "Man. I wish my roommate Oscar had come with me for this. Although he\u2019s
+        not the biggest believer in tarot, I feel like this is kinda fun! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[41]
+      value: "Your Oscar isn\u2019t the first I\u2019ve heard feel like that. Tarot
+        isn\u2019t for everyone. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[42]
+      value: "I have some decks for sale if you\u2019d like to try tarot out between
+        you two. They\u2019re already cleansed, so you don\u2019t have to worry about
+        that. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[43]
+      value: Really? I would love to buy one.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[44]
+      value: "Even if he isn\u2019t a fan of these cards, I at least know some friends
+        I can talk about these with. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[45]
+      value: Quinn looks through the assortment of decks the tarot reader has and
+        chooses one that catches her eye and feels like it is there just for her.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[46]
+      value: 'Quinn pays for it, thanks the reader, and leaves the tent. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[47]
+      value: "Quinn walks outside of the tent with a newfound sense of curiosity
+        about the deck she\u2019s bought."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[48]
+      value: 'She sees Oscar waiting outside the tent for her and she hurries quickly
+        to his side. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[49]
+      value: "Hey Oscar, I thought you said you\u2019d be here in an hour. What happened?
+        \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[50]
+      value: "I got bored after a while and came back here early. Guess it\u2019s
+        a lucky coincidence. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[51]
+      value: "Well, I have some great news for you. Look at what I bought. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[52]
+      value: "Quinn shows Oscar the Tarot Deck she just bought. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[53]
+      value: "You seriously paid money for that? I guarantee they upcharged you. 
+        \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[54]
+      value: "None of that matters. What does is that we\u2019re gonna go home now,
+        and you\u2019re getting a reading. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[55]
+      value: "I already told you, that stuff doesn\u2019t work. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[56]
+      value: "Just go along with it, please? It won\u2019t take long, and you\u2019ll
+        get enough sleep for tomorrow. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[57]
+      value: Sigh. Fine.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[58]
+      value: "YES. Thank you, thank you, thank you. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[59]
+      value: Before Oscar can respond, Quinn grabs his hand and begins dragging him
+        to get back to the apartment.
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[60]
+      value: "Quinn and Oscar are both back in their apartment now. The dog looks
+        excited to see both of them again. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[61]
+      value: "Okay, I\u2019m going to get everything together. You go ahead and sit
+        down, and I\u2019ll be right with you. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[2].sceneText.Array.data[62]
+      value: "Just don\u2019t take forever. I have stuff I gotta do tomorrow. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[10]
+      value: "Again, I\u2019m sorry. I wanted to check on you and see how you were
+        doing, especially after last night. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[11]
+      value: "You mean the so-called \u201Cmisfortune\u201D that\u2019s apparently
+        supposed to hit me?\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[12]
+      value: "I just think it\u2019s weird that the Tower ended up being your card
+        for the reading. Especially since the card I drew was the Chario-\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[13]
+      value: "Quinn, I have to get to work. Whatever card you drew doesn\u2019t have
+        anything to do with me. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[14]
+      value: "Like I said yesterday, I won\u2019t be in danger just because a card
+        gave a \u201Cwarning.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[15]
+      value: "But what if it is a sign of something to come? You don\u2019t know-
+        \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[16]
+      value: "I\u2019m already in a rush. We can have our talk later, but I have
+        to get to work on time, otherwise, they\u2019ll have another reason to get
+        rid of me."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[17]
+      value: 'I already apologized for th-
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[18]
+      value: "Oscar leaves and shuts the apartment door behind him before Quinn can
+        finish what she\u2019s saying. The dog comes up to Quinn whining. \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[19]
+      value: "I know buddy. He\u2019s still frustrated after the last time I surprised
+        him at work."
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[20]
+      value: "Even if that\u2019s the case, I\u2019m still worried about the reading.
+        If there\u2019s the slimmest chance he\u2019s in danger, I want to stop it
+        before it happens.  \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[21]
+      value: 'As the dog walks away from Quinn, she notices that the dog is facing
+        a knife on the counter in the kitchen. Quinn suddenly has an idea. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[22]
+      value: Wait, I have an idea. What if I take care of the things in the apartment
+        that could hurt him?
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[23]
+      value: "That way he can\u2019t be hurt by anything here, and I can rest easily
+        knowing he\u2019ll be safe. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[24]
+      value: "The dog smiles and barks in approval of Quinn's plan.  \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: GameNames.Array.data[4].sceneText.Array.data[25]
+      value: "Alright then, let\u2019s get to work."
       objectReference: {fileID: 0}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: currentPose.Array.data[0].sceneObject.Array.size
@@ -7579,7 +9060,31 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 24c744cdb66c39644b15bab982f10903, type: 3}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: Backgrounds.Array.data[1].sceneSprites.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: Backgrounds.Array.data[2].sceneSprites.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: speedtoMove.Array.data[0].sceneNumbers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: speedtoMove.Array.data[1].sceneNumbers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: speedtoMove.Array.data[2].sceneNumbers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: speedtoMove.Array.data[6].sceneNumbers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: speedtoMove.Array.data[7].sceneNumbers.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
@@ -7591,13 +9096,57 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 702237082}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: objectsToShake.Array.data[1].sceneObject.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: objectsToShake.Array.data[2].sceneObject.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: performableActions.Array.data[0].Actions.Array.size
-      value: 8
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.size
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.size
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[3].Actions.Array.size
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[4].Actions.Array.size
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[5].Actions.Array.size
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[6].Actions.Array.size
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[7].Actions.Array.size
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: Backgrounds.Array.data[0].sceneSprites.Array.data[0]
       value: 
       objectReference: {fileID: 21300000, guid: 5f25b0b5e10479442954cc31a48fee35, type: 3}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: Backgrounds.Array.data[1].sceneSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 77d8f11e4af00594c8aaf1784c1dd7a8, type: 3}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: Backgrounds.Array.data[2].sceneSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 77d8f11e4af00594c8aaf1784c1dd7a8, type: 3}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: speedtoMove.Array.data[0].sceneNumbers.Array.data[0]
       value: 10
@@ -7611,7 +9160,35 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToMove.Array.data[1].sceneObject.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToMove.Array.data[2].sceneObject.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToMove.Array.data[6].sceneObject.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToMove.Array.data[7].sceneObject.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: intensityOfShake.Array.data[1].sceneNumbers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: intensityOfShake.Array.data[2].sceneNumbers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: objectsToShake.Array.data[1].sceneObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: objectsToShake.Array.data[2].sceneObject.Array.data[0]
       value: 
       objectReference: {fileID: 1045163965}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
@@ -7628,18 +9205,126 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: performableActions.Array.data[0].Actions.Array.data[5]
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: performableActions.Array.data[0].Actions.Array.data[6]
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: performableActions.Array.data[0].Actions.Array.data[7]
-      value: 2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[8]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[9]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[0]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[3]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[4]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[5]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[6]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[7]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[8]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[9]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[3]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[5]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[6]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[7]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[8]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[9]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[4].Actions.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[5].Actions.Array.data[5]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[6].Actions.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[6].Actions.Array.data[3]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[6].Actions.Array.data[5]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[7].Actions.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[7].Actions.Array.data[3]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[7].Actions.Array.data[5]
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: charactersToAppear.Array.data[0].sceneObject.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToAppear.Array.data[6].sceneObject.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToAppear.Array.data[7].sceneObject.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
@@ -7647,8 +9332,468 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToMirror.Array.data[1].sceneObject.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToMirror.Array.data[2].sceneObject.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: locationsToMove.Array.data[0].sceneLocations.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: locationsToMove.Array.data[1].sceneLocations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: locationsToMove.Array.data[2].sceneLocations.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: locationsToMove.Array.data[6].sceneLocations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: locationsToMove.Array.data[7].sceneLocations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[10]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[11]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[12]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[13]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[14]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[15]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[16]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[17]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[18]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[19]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[20]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[21]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[22]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[23]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[24]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[25]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[26]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[27]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[28]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[29]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[30]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[31]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[32]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[33]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[34]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[35]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[36]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[0].Actions.Array.data[37]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[10]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[11]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[12]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[13]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[14]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[15]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[16]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[35]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[36]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[37]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[38]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[39]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[40]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[41]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[42]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[43]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[44]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[45]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[46]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[47]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[48]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[49]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[50]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[51]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[1].Actions.Array.data[52]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[10]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[11]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[12]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[13]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[14]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[15]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[16]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[17]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[18]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[19]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[20]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[21]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[22]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[23]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[24]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[25]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[26]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[27]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[28]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[29]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[30]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[31]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[32]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[33]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[34]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[35]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[36]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[37]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[38]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[39]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[40]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[41]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[42]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[43]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[44]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[45]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[46]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[47]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[48]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[49]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[50]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[51]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[52]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[53]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[54]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[55]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[56]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[57]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[58]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[59]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[60]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[61]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[62]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[63]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[64]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: performableActions.Array.data[2].Actions.Array.data[65]
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: charactersToMove.Array.data[0].sceneObject.Array.data[0]
@@ -7663,12 +9808,44 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1045163965}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToMove.Array.data[2].sceneObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: charactersToMove.Array.data[5].sceneObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToMove.Array.data[6].sceneObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToMove.Array.data[7].sceneObject.Array.data[0]
       value: 
       objectReference: {fileID: 1045163965}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: charactersToDisapear.Array.data[0].sceneObject.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[1].sceneObject.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[2].sceneObject.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[5].sceneObject.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[6].sceneObject.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[7].sceneObject.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: charactersToAppear.Array.data[0].sceneObject.Array.data[0]
@@ -7695,13 +9872,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1045163965}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToAppear.Array.data[6].sceneObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToAppear.Array.data[7].sceneObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: charactersToMirror.Array.data[0].sceneObject.Array.data[0]
       value: 
       objectReference: {fileID: 702237082}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToMirror.Array.data[1].sceneObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: charactersToMirror.Array.data[2].sceneObject.Array.data[0]
       value: 
-      objectReference: {fileID: 2101967344}
+      objectReference: {fileID: 1045163965}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: charactersToDisapear.Array.data[0].sceneObject.Array.data[0]
       value: 
@@ -7715,11 +9904,95 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1045163965}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[1].sceneObject.Array.data[1]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[1].sceneObject.Array.data[2]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[1].sceneObject.Array.data[3]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[1].sceneObject.Array.data[4]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[1].sceneObject.Array.data[5]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[1].sceneObject.Array.data[6]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[1].sceneObject.Array.data[7]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[1].sceneObject.Array.data[8]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[1].sceneObject.Array.data[9]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[2].sceneObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[2].sceneObject.Array.data[1]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[2].sceneObject.Array.data[2]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[2].sceneObject.Array.data[3]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[2].sceneObject.Array.data[4]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[2].sceneObject.Array.data[5]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[2].sceneObject.Array.data[6]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[2].sceneObject.Array.data[7]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[2].sceneObject.Array.data[8]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[2].sceneObject.Array.data[9]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: charactersToDisapear.Array.data[3].sceneObject.Array.data[0]
       value: 
       objectReference: {fileID: 2101967344}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: charactersToDisapear.Array.data[5].sceneObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[6].sceneObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[7].sceneObject.Array.data[0]
       value: 
       objectReference: {fileID: 1045163965}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
@@ -7738,5 +10011,13 @@ PrefabInstance:
       propertyPath: locationsToMove.Array.data[0].sceneLocations.Array.data[1].y
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[1].sceneObject.Array.data[10]
+      value: 
+      objectReference: {fileID: 1045163965}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: charactersToDisapear.Array.data[2].sceneObject.Array.data[10]
+      value: 
+      objectReference: {fileID: 1045163965}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
