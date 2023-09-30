@@ -171,9 +171,9 @@ public class CutsceneTracker : MonoBehaviour
         transitionOverlay.SetActive(true);
         continueText.enabled = false;
         currentScene = sceneToInitiate;
-        if (true)
+        for (int scene = currentScene; scene < performableActions.Length; scene++)
         {
-            for (int i = 0; i < performableActions[currentScene].Actions.Length; i++)
+            for (int i = 0; i < performableActions[scene].Actions.Length; i++)
             {
                 if (branchingScene == true)
                 {
@@ -182,35 +182,35 @@ public class CutsceneTracker : MonoBehaviour
                     branchingScene = false;
                 }
 
-                switch (performableActions[currentScene].Actions[i])
+                switch (performableActions[scene].Actions[i])
                 {
                     case VN_Actions.Line:
-                        yield return LoadTextDialogue(GameLines[currentScene].sceneText[numOfLinesPerScene], GameNames[currentScene].sceneText[numOfLinesPerScene]);
+                        yield return LoadTextDialogue(GameLines[scene].sceneText[numOfLinesPerScene], GameNames[scene].sceneText[numOfLinesPerScene]);
                         numOfLinesPerScene++;
                         break;
 
                     case VN_Actions.Appear:
-                        Appear(charactersToAppear[currentScene].sceneObject[charactersAppearing]);
+                        Appear(charactersToAppear[scene].sceneObject[charactersAppearing]);
                         charactersAppearing++;
                         break;
 
                     case VN_Actions.Backgound:
-                        Backgound(Backgrounds[currentScene].sceneSprites[numBackgrounds]);
+                        Backgound(Backgrounds[scene].sceneSprites[numBackgrounds]);
                         numBackgrounds++;
                         break;
 
                     case VN_Actions.Move:
-                        StartCoroutine(MoveLerp(charactersToMove[currentScene].sceneObject[numMovedCharacter], locationsToMove[currentScene].sceneLocations[numMovedCharacter], speedtoMove[currentScene].sceneNumbers[numMovedCharacter])); 
+                        StartCoroutine(MoveLerp(charactersToMove[scene].sceneObject[numMovedCharacter], locationsToMove[scene].sceneLocations[numMovedCharacter], speedtoMove[scene].sceneNumbers[numMovedCharacter])); 
                         numMovedCharacter++;
                         break;
 
                     case VN_Actions.Remove:
-                        Remove(charactersToDisapear[currentScene].sceneObject[numRemovedChars]);
+                        Remove(charactersToDisapear[scene].sceneObject[numRemovedChars]);
                         numRemovedChars++;
                         break;
 
                     case VN_Actions.Mirror:
-                        Mirror(charactersToMirror[currentScene].sceneObject[numRotatingCharacters]);
+                        Mirror(charactersToMirror[scene].sceneObject[numRotatingCharacters]);
                         numRotatingCharacters++;
                         break;
 
@@ -219,7 +219,7 @@ public class CutsceneTracker : MonoBehaviour
                         break;
 
                     case VN_Actions.ChangePose:
-                        ChangeSprite(currentPose[currentScene].sceneObject[numOfPosChanges], newPoseWithObj[currentScene].sceneObject[numOfPosChanges]);
+                        ChangeSprite(currentPose[scene].sceneObject[numOfPosChanges], newPoseWithObj[scene].sceneObject[numOfPosChanges]);
                         numOfPosChanges++;
                         break;
 
@@ -228,7 +228,7 @@ public class CutsceneTracker : MonoBehaviour
                         break;
 
                     case VN_Actions.Choice:
-                        yield return Choice(choices[currentScene].nestedDecitions[numOfChoices].sceneText, scenesToGoTo[currentScene].nestedSceneBranching[numOfChoices].sceneNumbers);
+                        yield return Choice(choices[scene].nestedDecitions[numOfChoices].sceneText, scenesToGoTo[scene].nestedSceneBranching[numOfChoices].sceneNumbers);
                         numOfChoices++;
                         if (branchingScene == true)
                         {
@@ -238,9 +238,9 @@ public class CutsceneTracker : MonoBehaviour
 
                 }
             }
+            CountersReset();
+            Debug.Log("VN Scene Complete");
         }
-        CountersReset();
-        Debug.Log("VN Scene Complete");
     }
 
     IEnumerator WaitForMidTextSkip()
