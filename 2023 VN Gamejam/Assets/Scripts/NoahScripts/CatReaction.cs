@@ -5,26 +5,35 @@ using UnityEngine.UI;
 
 public class CatReaction : MonoBehaviour
 {
-    public Sprite catTurnHeadSprite;
-    public Sprite catNetrualSprite;
-    public Button Cat;
+    private AudioSource petSoundSorce;
+    private Image sourceImage;
+    public Sprite petTurnHeadSprite;
+    public Sprite petNetrualSprite;
+    //public Button Pet;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        petSoundSorce = GetComponent<AudioSource>();
+        sourceImage = GetComponent<Image>();
     }
 
-    public void catClicked()
+    public void petClicked()
     {
-        var currentCatSprite = GetComponent<Sprite>();
-        currentCatSprite = catTurnHeadSprite;
-        StartCoroutine(catMeow(currentCatSprite));
+        sourceImage.sprite = petNetrualSprite;
+        StartCoroutine(waitForEndOfNoice());
     }
 
-    IEnumerator catMeow(Sprite currentCatSprite)
+    IEnumerator waitForEndOfNoice()
     {
-        yield return new WaitForSecondsRealtime(2);
-        currentCatSprite = catNetrualSprite;
+        if (!petSoundSorce.isPlaying)
+        {
+            petSoundSorce.Play();
+            while (petSoundSorce.isPlaying)
+            {
+                yield return 0;
+            }
+            sourceImage.sprite = petTurnHeadSprite;
+        }
     }
 }
