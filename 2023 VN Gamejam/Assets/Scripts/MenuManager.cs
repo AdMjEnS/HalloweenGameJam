@@ -9,6 +9,7 @@ public class MenuManager : MonoBehaviour
 {
     public Image viewImage1, viewImage2;
     public List<GameObject> allPanels = new List<GameObject>();
+    public List<Button> allButtons = new List<Button>();
     public AudioMixer audioMixer;
 
     public float scrollSpeed = 2;
@@ -17,6 +18,11 @@ public class MenuManager : MonoBehaviour
     void Start()
     {
         SetAllPanelsOff();
+
+        foreach (Button buttons in allButtons)
+        {
+            buttons.interactable = true;
+        }
 
         //audioMixer.SetFloat("masterVolume", PlayerPrefs.GetFloat("masterVolume"));
     }
@@ -35,6 +41,7 @@ public class MenuManager : MonoBehaviour
     public void ActivatePanel(GameObject panel)
     {
         panel.SetActive(!panel.activeSelf);
+        SetAllButtonsDisabled();
     }
 
     private void ScrollBackgroundImages()
@@ -47,6 +54,14 @@ public class MenuManager : MonoBehaviour
         foreach(GameObject panel in allPanels)
         {
             panel.gameObject.SetActive(false);
+        }
+    }
+
+    private void SetAllButtonsDisabled()
+    {
+        foreach(Button buttons in allButtons)
+        {
+            buttons.interactable = !buttons.interactable;
         }
     }
 }

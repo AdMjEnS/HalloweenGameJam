@@ -3524,7 +3524,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40.8, y: 34.99963}
+  m_AnchoredPosition: {x: -40.8, y: 34.999443}
   m_SizeDelta: {x: 68, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1253667199
@@ -3694,8 +3694,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 498522700}
   m_HandleRect: {fileID: 498522699}
   m_Direction: 2
-  m_Value: 1.0000015
-  m_Size: 0.2333333
+  m_Value: 1.0000024
+  m_Size: 0.22177315
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3772,6 +3772,10 @@ MonoBehaviour:
   allPanels:
   - {fileID: 2049984144}
   - {fileID: 181076396}
+  allButtons:
+  - {fileID: 1871716038}
+  - {fileID: 2135454425}
+  - {fileID: 1068543623}
   audioMixer: {fileID: 24100000, guid: aa0e9bead70a359498581fdcf5883818, type: 2}
   scrollSpeed: 2
 --- !u!4 &1373195510
