@@ -493,17 +493,20 @@ public class CT_Editor : Editor
     {
         //EditorGUILayout.PropertyField(serializedObject.FindProperty("currentPose"));
         //EditorGUILayout.PropertyField(serializedObject.FindProperty("newPose"));
+        //EditorGUILayout.PropertyField(serializedObject.FindProperty("newPoseWithObj"));
 
         //Makes sure the length of Position arrays are the same as the Performable Action arrays
         if (ct_Script.currentPose.Length != ct_Script.performableActions.Length)
         {
             Array.Resize(ref ct_Script.currentPose, ct_Script.performableActions.Length);
+            Array.Resize(ref ct_Script.newPoseWithObj, ct_Script.performableActions.Length);
             Array.Resize(ref ct_Script.newPose, ct_Script.performableActions.Length);
         }
 
         //Instanciates them into varables
         var StartPos = ct_Script.currentPose[whichScene].sceneObject;
-        var NewPos = ct_Script.newPose[whichScene].sceneSprites;
+        //var NewPos = ct_Script.newPose[whichScene].sceneSprites;
+        var NewPos = ct_Script.newPoseWithObj[whichScene].sceneObject;
 
         //If there is any integer bigger then zero then it constantly checks to make sure that everything is displayed corectly
         if (posesPerScene != 0 || StartPos.Count != 0 || NewPos.Count != 0)
@@ -530,8 +533,7 @@ public class CT_Editor : Editor
                         NewPos.RemoveAt(NewPos.Count - 1);
                     }
                 }
-
-                if (StartPos.Count < posesPerScene || NewPos.Count < posesPerScene)
+                else if (StartPos.Count < posesPerScene || NewPos.Count < posesPerScene)
                 {
                     StartPos.Add(null);
                     NewPos.Add(null);
@@ -545,8 +547,9 @@ public class CT_Editor : Editor
 
             PoseScrollPos = EditorGUILayout.BeginScrollView(PoseScrollPos, true, true);
             EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("currentPose").GetArrayElementAtIndex(whichScene), new GUIContent("Current " + whichScene));
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("newPose").GetArrayElementAtIndex(whichScene), new GUIContent("New " + whichScene));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("currentPose").GetArrayElementAtIndex(whichScene), new GUIContent("Current Pose " + whichScene));
+            //EditorGUILayout.PropertyField(serializedObject.FindProperty("newPose").GetArrayElementAtIndex(whichScene), new GUIContent("New Pose" + whichScene));
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("newPoseWithObj").GetArrayElementAtIndex(whichScene), new GUIContent("New Pose" + whichScene));
             EditorGUILayout.EndHorizontal();
             EditorGUILayout.EndScrollView();
         }

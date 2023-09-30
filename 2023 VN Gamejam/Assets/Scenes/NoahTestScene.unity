@@ -13112,6 +13112,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1391732708}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: newPoseWithObj.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: objectsToShake.Array.size
       value: 8
       objectReference: {fileID: 0}
@@ -15960,6 +15964,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 176207698}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: newPoseWithObj.Array.data[0].sceneObject.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: objectsToShake.Array.data[1].sceneObject.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -16079,6 +16087,10 @@ PrefabInstance:
       propertyPath: intensityOfShake.Array.data[2].sceneNumbers.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
+      propertyPath: newPoseWithObj.Array.data[0].sceneObject.Array.data[0]
+      value: 
+      objectReference: {fileID: 49699516}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: objectsToShake.Array.data[1].sceneObject.Array.data[0]
       value: 

@@ -47,6 +47,7 @@ public class CutsceneTracker : MonoBehaviour
     public SceneSprite[] Backgrounds;
 
     public SceneObjects[] currentPose;
+    public SceneObjects[] newPoseWithObj;
     public SceneSprite[] newPose;
 
     public NestedDecitionText[] choices;
@@ -218,7 +219,7 @@ public class CutsceneTracker : MonoBehaviour
                         break;
 
                     case VN_Actions.ChangePose:
-                        ChangeSprite(currentPose[currentScene].sceneObject[numOfPosChanges], newPose[currentScene].sceneSprites[numOfPosChanges]);
+                        ChangeSprite(currentPose[currentScene].sceneObject[numOfPosChanges], newPoseWithObj[currentScene].sceneObject[numOfPosChanges]);
                         numOfPosChanges++;
                         break;
 
@@ -295,25 +296,12 @@ public class CutsceneTracker : MonoBehaviour
     {
         obj.SetActive(false);
     }
-    /*
-    IEnumerator Appear(GameObject obj, Vector3 startPos, Vector3 endPos, float timeToMove)
-    {
-        transform.position = startPos;
-        gameObject.SetActive(true);
-        float elapsedTime = 0;
-        while (elapsedTime <= timeToMove)
-        {
-            transform.position = Vector3.Lerp(startPos, endPos, elapsedTime / timeToMove);
-            elapsedTime += Time.deltaTime;
-            yield return null;
-        }
-        transform.position = endPos;
-    } */
 
     void Shake()
     {
-
+        
     }
+
     void Mirror(GameObject objToMirror)
     {
         var trans = objToMirror.transform;
@@ -341,14 +329,21 @@ public class CutsceneTracker : MonoBehaviour
         ChangePose(backgroundImage, img);
     }
 
-    void ChangeSprite(GameObject obj, Sprite img)
+    void ChangeSprite(GameObject pose1, GameObject pose2)
     {
-        ChangePose(obj.GetComponent<Image>(), img);
+        //ChangePose(obj.GetComponent<Image>(), img);
+        ChangePoseWithObject(pose1, pose2);
     }
 
     void ChangePose(Image obj, Sprite img)
     {
         obj.sprite = img;
+    }
+
+    void ChangePoseWithObject(GameObject pose1, GameObject pose2)
+    {
+        pose1.SetActive(false);
+        pose2.SetActive(true);
     }
 
     IEnumerator RunPNC()
