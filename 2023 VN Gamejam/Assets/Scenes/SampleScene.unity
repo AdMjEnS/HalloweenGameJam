@@ -5001,6 +5001,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2039028247}
     m_Modifications:
+    - target: {fileID: 1151293270095763709, guid: 3469a9e93718da34e8ff80e583f61e24, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151293270140050319, guid: 3469a9e93718da34e8ff80e583f61e24, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151293270180738009, guid: 3469a9e93718da34e8ff80e583f61e24, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151293270432394010, guid: 3469a9e93718da34e8ff80e583f61e24, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1151293270684033217, guid: 3469a9e93718da34e8ff80e583f61e24, type: 3}
       propertyPath: m_Name
       value: Oscar_Poses
@@ -5088,6 +5104,30 @@ PrefabInstance:
     - target: {fileID: 1151293270684033218, guid: 3469a9e93718da34e8ff80e583f61e24, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151293271065492143, guid: 3469a9e93718da34e8ff80e583f61e24, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151293271114800848, guid: 3469a9e93718da34e8ff80e583f61e24, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151293271253716498, guid: 3469a9e93718da34e8ff80e583f61e24, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151293271297695270, guid: 3469a9e93718da34e8ff80e583f61e24, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151293271596190772, guid: 3469a9e93718da34e8ff80e583f61e24, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151293271633258131, guid: 3469a9e93718da34e8ff80e583f61e24, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3469a9e93718da34e8ff80e583f61e24, type: 3}
