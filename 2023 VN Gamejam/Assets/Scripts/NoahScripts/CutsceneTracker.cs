@@ -75,6 +75,7 @@ public class CutsceneTracker : MonoBehaviour
     public int count;
     public int numCompleted = 0;
     public GameObject currentPNC;
+    public bool pncActive = false;
 
     private int currentScene = 0;
     private bool branchingScene = false;
@@ -147,7 +148,7 @@ public class CutsceneTracker : MonoBehaviour
 
     public void Awake()
     {
-        StartCoroutine(VisualNovelSceneCurator(7));
+        StartCoroutine(VisualNovelSceneCurator(0));
     }
 
     public void Update()
@@ -345,7 +346,11 @@ public class CutsceneTracker : MonoBehaviour
             yield return 0;
         }*/
 
-      
+      while (pncActive)
+        {
+            yield return 0;
+        }
+
         continueText.enabled = true;
         yield return StartCoroutine(WaitForDownKey(KeyCode.Return));
         continueText.enabled = false;
@@ -423,7 +428,7 @@ public class CutsceneTracker : MonoBehaviour
 
     IEnumerator RunPNC()
     {
-        
+        pncActive = true;
         transitionOverlay.SetActive(false);
 
         currentPNC = PNCOverlay[numCompleted];
@@ -440,7 +445,8 @@ public class CutsceneTracker : MonoBehaviour
         transitionOverlay.SetActive(true);
         currentPNC.SetActive(false);
         numCompleted++;
-       
+
+        pncActive = false;
         StopCoroutine(RunPNC());
 
     }

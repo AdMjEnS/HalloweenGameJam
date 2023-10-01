@@ -11,6 +11,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource doorOpenAudio;
     public AudioSource doorCloseAudio;
     public AudioSource cardAudio;
+    public AudioSource itemAudio;
     public CutsceneTracker ct;
 
     [Serializable]
@@ -43,4 +44,5 @@ public class SoundManager : MonoBehaviour
     public AudioClip doorOpen;
     public AudioClip doorClose;
     public AudioClip cardsShuffle;
+    public AudioClip itemGet;
 }
