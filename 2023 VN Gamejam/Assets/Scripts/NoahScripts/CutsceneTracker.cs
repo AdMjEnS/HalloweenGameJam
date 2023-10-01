@@ -61,6 +61,7 @@ public class CutsceneTracker : MonoBehaviour
     public Text continueText;
     public Text nameText;
     public ChoicePanal panel;
+    public SoundManager sm;
 
     public string[] saveRandomIntroText;
     public SceneText[] saveRandomPreText;
@@ -142,7 +143,7 @@ public class CutsceneTracker : MonoBehaviour
 
     public void Awake()
     {
-        StartCoroutine(VisualNovelSceneCurator(5));
+        StartCoroutine(VisualNovelSceneCurator(0));
     }
 
     public void Update()
@@ -173,6 +174,17 @@ public class CutsceneTracker : MonoBehaviour
         currentScene = sceneToInitiate;
         for (int scene = currentScene; scene < performableActions.Length; scene++)
         {
+            if (scene == 6)
+            {
+                sm.backgroundAudio.clip = sm.backgroundMusic[1];
+                sm.backgroundAudio.Play();
+            }
+            else if (scene == 7)
+            {
+                sm.backgroundAudio.clip = sm.backgroundMusic[0];
+                sm.backgroundAudio.Play();
+            }
+
             for (int i = 0; i < performableActions[scene].Actions.Length; i++)
             {
                 if (branchingScene == true)
@@ -259,12 +271,45 @@ public class CutsceneTracker : MonoBehaviour
     IEnumerator LoadTextDialogue(string text, string name)
     {
         nameText.text = name;
+        if (name == "Quinn")
+        {
+            sm.beepboopSource.clip = sm.lineBeepBoops[0];
+        }
+        else if (name == "Oscar")
+        {
+            sm.beepboopSource.clip = sm.lineBeepBoops[1];
+        }
+        else
+        {
+            sm.beepboopSource.clip = sm.lineBeepBoops[2];
+        }
+
+        if (text.Contains("shuffle"))
+        {
+            sm.cardAudio.clip = sm.cardsShuffle;
+            sm.cardAudio.Play();
+        }
+
+        if (text.Contains("draws"))
+        {
+            sm.cardAudio.clip = sm.cardDrawSounds[UnityEngine.Random.Range(0,5)];
+            sm.cardAudio.Play();
+        }
+
         StartCoroutine(WaitForMidTextSkip());
         for (int i = 0; i < text.Length; i++)
         {
             displayText.text = text.Substring(0, i);
 
             yield return new WaitForSecondsRealtime(0.03f);
+
+            if (sm.audioSelector == 0)
+            {
+                if (i % 2 == 0)
+                {
+                    sm.beepboopSource.Play();
+                }
+            }
 
             if (continueText.enabled)
             {
@@ -289,12 +334,14 @@ public class CutsceneTracker : MonoBehaviour
     void Appear(GameObject obj)
     {
         obj.SetActive(true);
+        sm.doorOpenAudio.Play();
     }
 
 
     void Remove(GameObject obj)
     {
         obj.SetActive(false);
+        sm.doorCloseAudio.Play();
     }
 
     void Shake()

@@ -6,8 +6,11 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public AudioSource backgroundAudio;
+    public AudioSource beepboopSource;
     public AudioSource duringLinesVoice;
-    public GameManager gm;
+    public AudioSource doorOpenAudio;
+    public AudioSource doorCloseAudio;
+    public AudioSource cardAudio;
     public CutsceneTracker ct;
 
     [Serializable]
@@ -34,4 +37,10 @@ public class SoundManager : MonoBehaviour
 
     public AudioClip[] lineBeepBoops;
     public PreAudio[] linesAudio;
+    public AudioClip[] cardDrawSounds;
+    public AudioClip[] footSteps;
+    public AudioClip[] backgroundMusic;
+    public AudioClip doorOpen;
+    public AudioClip doorClose;
+    public AudioClip cardsShuffle;
 }

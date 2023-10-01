@@ -145,6 +145,7 @@ public class CT_Editor : Editor
         EditorGUILayout.PropertyField(serializedObject.FindProperty("nameText"));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("PNCOverlay"));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("panel"));
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("sm"));
 
         if (GUI.changed)
         {
