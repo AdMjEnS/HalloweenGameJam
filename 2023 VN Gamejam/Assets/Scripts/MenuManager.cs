@@ -11,6 +11,7 @@ public class MenuManager : MonoBehaviour
     public List<GameObject> allPanels = new List<GameObject>();
     public List<Button> allButtons = new List<Button>();
     public AudioMixer audioMixer;
+    public GameObject pauseMenu;
 
     //public float scrollSpeed = 2;
 
@@ -28,7 +29,7 @@ public class MenuManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ScrollBackgroundImages();
+        PauseGame();
     }
 
     public void PlayGame(string sceneName)
@@ -71,6 +72,19 @@ public class MenuManager : MonoBehaviour
         foreach(Button buttons in allButtons)
         {
             buttons.interactable = !buttons.interactable;
+        }
+    }
+
+    private void PauseGame()
+    {
+        if(pauseMenu != null)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Debug.Log("Pressed!");
+                SetAllPanelsOff();
+                pauseMenu.SetActive(true);
+            }
         }
     }
 }
