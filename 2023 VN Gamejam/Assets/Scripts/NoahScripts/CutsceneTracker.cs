@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class CutsceneTracker : MonoBehaviour
 {
@@ -62,6 +64,8 @@ public class CutsceneTracker : MonoBehaviour
     public Text nameText;
     public ChoicePanal panel;
     public SoundManager sm;
+    public GameObject DisplayVideo;
+    public VideoPlayer EndingVideo;
 
     public string[] saveRandomIntroText;
     public SceneText[] saveRandomPreText;
@@ -143,7 +147,7 @@ public class CutsceneTracker : MonoBehaviour
 
     public void Awake()
     {
-        StartCoroutine(VisualNovelSceneCurator(0));
+        StartCoroutine(VisualNovelSceneCurator(7));
     }
 
     public void Update()
@@ -253,6 +257,24 @@ public class CutsceneTracker : MonoBehaviour
             CountersReset();
             Debug.Log("VN Scene Complete");
         }
+        StartCoroutine(BackToMainMenu());
+    }
+
+    IEnumerator BackToMainMenu()
+    {
+        DisplayVideo.SetActive(true);
+        EndingVideo.Play();
+        while (EndingVideo.isPlaying)
+        {
+            yield return null;
+
+            /*if (Input.anyKeyDown)
+            {
+                break;
+            }*/
+        }
+
+        SceneManager.LoadScene("Main Menu");
     }
 
     IEnumerator WaitForMidTextSkip()
@@ -334,14 +356,20 @@ public class CutsceneTracker : MonoBehaviour
     void Appear(GameObject obj)
     {
         obj.SetActive(true);
-        sm.doorOpenAudio.Play();
+        if (currentScene != 7)
+        {
+            sm.doorOpenAudio.Play();
+        }
     }
 
 
     void Remove(GameObject obj)
     {
         obj.SetActive(false);
-        sm.doorCloseAudio.Play();
+        if (currentScene != 7)
+        {
+            sm.doorCloseAudio.Play();
+        }
     }
 
     void Shake()
