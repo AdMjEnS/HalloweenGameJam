@@ -12,7 +12,7 @@ public class MenuManager : MonoBehaviour
     public List<Button> allButtons = new List<Button>();
     public AudioMixer audioMixer;
 
-    public float scrollSpeed = 2;
+    //public float scrollSpeed = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,8 @@ public class MenuManager : MonoBehaviour
             buttons.interactable = true;
         }
 
-        //audioMixer.SetFloat("masterVolume", PlayerPrefs.GetFloat("masterVolume"));
+        audioMixer.SetFloat("masterVolume", PlayerPrefs.GetFloat("masterVolume"));
+        audioMixer.SetFloat("musicVolume", PlayerPrefs.GetFloat("musicVolume"));
     }
 
     // Update is called once per frame
@@ -36,6 +37,17 @@ public class MenuManager : MonoBehaviour
     public void PlayGame(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void QuitGame()
+    {
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+
+        Application.Quit();
+
     }
 
     public void ActivatePanel(GameObject panel)
