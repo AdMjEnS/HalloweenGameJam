@@ -302,7 +302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6650572429909091011
 Transform:
   m_ObjectHideFlags: 0
@@ -1168,7 +1168,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3bdd63cc8adcb2b4aa787c10e0d43d40, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b59030faf5eda12468bacec192e04d21, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1207,8 +1207,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: b2e6f7769f0609944a5cfdbccdaa3d45, type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 15e3be3322f32424f8f30479362f6aaf, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: 94739648c4f59e641a8199f89337106c, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 8a8a7482d7beedf45b9a2c4682618cce, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -3841,7 +3841,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6650572431504117953
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4867,7 +4867,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 80681ea5572bbe84c938d2933845e981, type: 3}
+  m_Sprite: {fileID: 21300000, guid: efb947205d9a68444abe090d8c2e4af2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4906,8 +4906,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: db3dd92b009635a469763843d750e892, type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 86087fdec630c0245bf0d6a1b917152b, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: b5388b2f67d7e5545b7beee3dee3363e, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: a37d8097bfaa8a14388c641f773d870e, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
