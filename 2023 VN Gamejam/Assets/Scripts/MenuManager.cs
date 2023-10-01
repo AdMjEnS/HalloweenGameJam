@@ -20,6 +20,11 @@ public class MenuManager : MonoBehaviour
     {
         SetAllPanelsOff();
 
+        if (pauseMenu != null)
+        {
+            pauseMenu.SetActive(false);
+        }
+
         foreach (Button buttons in allButtons)
         {
             buttons.interactable = true;
