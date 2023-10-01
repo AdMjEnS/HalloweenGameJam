@@ -20309,7 +20309,7 @@ PrefabInstance:
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: newPoseWithObj.Array.data[5].sceneObject.Array.data[9]
       value: 
-      objectReference: {fileID: 176207698}
+      objectReference: {fileID: 1158501304}
     - target: {fileID: 577740833872231910, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: newPoseWithObj.Array.data[6].sceneObject.Array.data[0]
       value: 
