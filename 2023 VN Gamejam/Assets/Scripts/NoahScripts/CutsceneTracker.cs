@@ -142,7 +142,7 @@ public class CutsceneTracker : MonoBehaviour
 
     public void Awake()
     {
-        StartCoroutine(VisualNovelSceneCurator(0));
+        StartCoroutine(VisualNovelSceneCurator(7));
     }
 
     public void Update()
