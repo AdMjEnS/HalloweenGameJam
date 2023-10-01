@@ -23558,7 +23558,7 @@ PrefabInstance:
     - target: {fileID: 577740833872231911, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
       propertyPath: backgroundMusic.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: 0605d61192376f741a41715d594e8823, type: 3}
+      objectReference: {fileID: 8300000, guid: 4c0c582ec17d4104fbc5f864f4118c0d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fccea64762dff6e4c975df1b206489ba, type: 3}
 --- !u!114 &577740833814895756 stripped
