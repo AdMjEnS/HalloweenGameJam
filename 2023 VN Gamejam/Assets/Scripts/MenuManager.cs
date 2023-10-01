@@ -23,9 +23,6 @@ public class MenuManager : MonoBehaviour
         {
             buttons.interactable = true;
         }
-
-        audioMixer.SetFloat("masterVolume", PlayerPrefs.GetFloat("masterVolume"));
-        audioMixer.SetFloat("musicVolume", PlayerPrefs.GetFloat("musicVolume"));
     }
 
     // Update is called once per frame

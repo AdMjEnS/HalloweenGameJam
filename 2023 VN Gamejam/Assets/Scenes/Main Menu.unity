@@ -464,7 +464,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: 7, y: 10, z: 7, w: 10}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -981,7 +981,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: 7, y: 10, z: 7, w: 10}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2603,7 +2603,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: 7, y: 10, z: 7, w: 10}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2933,7 +2933,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: 7, y: 10, z: 7, w: 10}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4837,7 +4837,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40.8, y: 34.99941}
+  m_AnchoredPosition: {x: -40.8, y: 34.99999}
   m_SizeDelta: {x: 68, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1253667199
@@ -5007,8 +5007,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 498522700}
   m_HandleRect: {fileID: 498522699}
   m_Direction: 2
-  m_Value: 1.0000025
-  m_Size: 0.23332751
+  m_Value: 1
+  m_Size: 0.23331958
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5166,6 +5166,7 @@ MonoBehaviour:
   - {fileID: 1871716038}
   - {fileID: 2135454425}
   - {fileID: 1068543623}
+  - {fileID: 219140820}
   audioMixer: {fileID: 24100000, guid: aa0e9bead70a359498581fdcf5883818, type: 2}
 --- !u!4 &1373195510
 Transform:
@@ -6671,6 +6672,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1396736450}
     m_Modifications:
+    - target: {fileID: 8618719236867359490, guid: 5a2d7be6f467348458612ee3f26fb2d2, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 728410681967436333, guid: aa0e9bead70a359498581fdcf5883818, type: 2}
     - target: {fileID: 8618719236867359492, guid: 5a2d7be6f467348458612ee3f26fb2d2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
