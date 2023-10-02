@@ -179,7 +179,10 @@ public class CutsceneTracker : MonoBehaviour
         currentScene = sceneToInitiate;
         for (int scene = currentScene; scene < performableActions.Length; scene++)
         {
-            if (scene == 6)
+            /*sm.backgroundAudio.clip = sm.backgroundMusic[0];
+            sm.backgroundAudio.Play();*/
+
+            /*if (scene == 6)
             {
                 sm.backgroundAudio.clip = sm.backgroundMusic[1];
                 sm.backgroundAudio.Play();
@@ -188,7 +191,7 @@ public class CutsceneTracker : MonoBehaviour
             {
                 sm.backgroundAudio.clip = sm.backgroundMusic[0];
                 sm.backgroundAudio.Play();
-            }
+            }*/
 
             for (int i = 0; i < performableActions[scene].Actions.Length; i++)
             {
